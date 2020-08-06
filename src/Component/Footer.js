@@ -9,7 +9,7 @@ const FooterPagePro = () => {
           <MDBRow className="py-4 d-flex align-items-center">
             <MDBCol md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">
               <h6 className="mb-0 white-text">
-                Get connected with us on social networks!
+              Ssr Full stack developer / Software engineer
               </h6>
             </MDBCol>
             <MDBCol md="6" lg="7" className="text-center text-md-right">
@@ -27,13 +27,11 @@ const FooterPagePro = () => {
         <MDBRow className="mt-3">
           <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>Company name</strong>
+              <strong>Descripcion</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
-              Here you can use rows and columns here to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+              Soy un entuciasta de la tecnologia que esta en constante aprendisaje y conocimiento 
             </p>
           </MDBCol>
           <MDBCol md="2" lg="2" xl="2" className="mb-4 dark-grey-text">
@@ -94,16 +92,13 @@ const FooterPagePro = () => {
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
-              <i className="fa fa-home mr-3" /> New York, NY 10012, US
+              <i className="fa fa-home mr-3" /> Castelar, Buenos Aires, Argentina.
             </p>
             <p>
-              <i className="fa fa-envelope mr-3" /> info@example.com
+              <i className="fa fa-envelope mr-3" />franco.gonzalez.sosa@gmail.com
             </p>
             <p>
-              <i className="fa fa-phone mr-3" /> + 01 234 567 88
-            </p>
-            <p>
-              <i className="fa fa-print mr-3" /> + 01 234 567 89
+              <i className="fa fa-phone mr-3" /> 01144186438
             </p>
           </MDBCol>
         </MDBRow>

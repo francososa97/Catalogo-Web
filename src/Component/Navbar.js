@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link,NavLink  } from 'react-router-dom';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav,MDBHamburgerToggler  ,MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -34,43 +35,44 @@ class Navbar extends React.Component {
     return (
       <div>
         <header>
-          <Router>
             <MDBNavbar color="blue lighten-1">
             <MDBNavbarBrand>
-              Franco Sosa
+            <strong className="white-text">Franco Sosa</strong>
             </MDBNavbarBrand>
             <MDBHamburgerToggler color="white" id="hamburger1" onClick={()=> this.toggleSingleCollapse('collapse1')} />
               <MDBCollapse isOpen={this.state.collapse1} navbar>
-                <MDBNavbarNav left>
-                  <MDBNavItem active>
-                    <MDBNavLink to="#!">Home</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#!">Catalogo</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#!">Contacto</MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
+              <ul className="navbar-nav mr-auto">
+                  <li>
+                  <NavLink 
+                        to='/'
+                        className="nav-link"
+                        activeClassName="active"
+                    >
+                      <p className="white-text">Home</p>
+                    </NavLink>
+                  </li>
+                  <li>
+                  <NavLink 
+                        to='/Catalogo'
+                        className="nav-link"
+                        activeClassName="active"
+                    >
+                      <p className="white-text">Catalogo</p>
+                    </NavLink>
+                  </li>
+                  <li>
+                  <Link 
+                        to='/Contacto'
+                        className="nav-link"
+                        activeClassName="active"
+                    >
+                      <p className="white-text">Contacto</p>
+                    </Link>
+                  </li>
+                </ul>
               </MDBCollapse>
         </MDBNavbar>
-          </Router>
-
-          <MDBView src="https://mdbootstrap.com/img/Photos/Others/img%20(50).jpg">
-            <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
-              <h2>This Navbar is fixed</h2>
-              <h5>It will always stay visible on the top, even when you scroll down</h5>
-              <br />
-              <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
-            </MDBMask>
-          </MDBView>
         </header>
-
-        <main>
-          <MDBContainer className="text-center my-5">
-            <p align="justify">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </MDBContainer>
-        </main>
       </div>
     );
   }
