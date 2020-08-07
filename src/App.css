@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.row-footer{
+  margin-right: 10%;
+}
 
 .App-logo {
   height: 40vmin;

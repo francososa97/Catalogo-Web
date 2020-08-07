@@ -3,9 +3,9 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
-import Home from './Component/Home';
-import Catalogo from './Component/Catalogo';
-import Contacto from './Component/Contacto';
+import Home from './Pages/Home';
+import Catalogo from './Pages/Catalogo';
+import Contacto from './Pages/Contacto';
 
 function App() {
   return (

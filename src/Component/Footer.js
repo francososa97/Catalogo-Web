@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter,MDBIcon, MDBBtn } from "mdbreact";
+import ImgPerfil from '../Images/Perfil.png';
 
 const FooterPagePro = () => {
   return (
@@ -9,7 +10,7 @@ const FooterPagePro = () => {
           <MDBRow className="py-4 d-flex align-items-center">
             <MDBCol md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">
               <h6 className="mb-0 white-text">
-              Ssr Full stack developer / Software engineer
+              Full stack developer
               </h6>
             </MDBCol>
             <MDBCol md="6" lg="7" className="text-center text-md-right">
@@ -25,6 +26,17 @@ const FooterPagePro = () => {
       </div>
       <MDBContainer className="mt-5 mb-4 text-center text-md-left">
         <MDBRow className="mt-3">
+          <MDBCol md="2" lg="2" xl="2" className="mb-4 dark-grey-text">
+          <img
+                tag="img"
+                src={ImgPerfil}
+                className="rounded-circle z-depth-1 img-fluid"
+                alt="Sample avatar"
+              />
+              <h5 className="font-weight-bold mt-4 mb-3">Franco Damian Gonzalez Sosa</h5>
+              <p className="text-uppercase blue-text">Full stack developer</p>
+              <p className="text-uppercase blue-text">Software engineer</p>
+          </MDBCol>
           <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
             <h6 className="text-uppercase font-weight-bold">
               <strong>Descripcion</strong>
@@ -36,53 +48,58 @@ const FooterPagePro = () => {
           </MDBCol>
           <MDBCol md="2" lg="2" xl="2" className="mb-4 dark-grey-text">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>Products</strong>
+              <strong>Stack Tecnologico</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
-              <a href="#!" className="dark-grey-text">
-                MDBootstrap
+              <a href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework" className="dark-grey-text">
+                .Net
               </a>
             </p>
             <p>
-              <a href="#!" className="dark-grey-text">
-                MDWordPress
+              <a href="https://es.reactjs.org/" className="dark-grey-text">
+                React
               </a>
             </p>
             <p>
-              <a href="#!" className="dark-grey-text">
-                BrandFlow
+              <a href="https://docs.microsoft.com/en-us/sql/?view=sql-server-ver15" className="dark-grey-text">
+                Sql server
               </a>
             </p>
             <p>
-              <a href="#!" className="dark-grey-text">
-                Bootstrap Angular
+              <a href="https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1" className="dark-grey-text">
+                Asp.net Core
               </a>
             </p>
           </MDBCol>
           <MDBCol md="3" lg="2" xl="2" className="mb-4 dark-grey-text">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>Useful links</strong>
+              <strong>STRENGTHS</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
               <a href="#!" className="dark-grey-text">
-                Your Account
+                Learner
               </a>
             </p>
             <p>
               <a href="#!" className="dark-grey-text">
-                Become an Affiliate
+              Relator
               </a>
             </p>
             <p>
               <a href="#!" className="dark-grey-text">
-                Shipping Rates
+              Analytical
               </a>
             </p>
             <p>
               <a href="#!" className="dark-grey-text">
-                Help
+              Intellection
+              </a>
+            </p>
+            <p>
+              <a href="#!" className="dark-grey-text">
+              Consistency
               </a>
             </p>
           </MDBCol>
