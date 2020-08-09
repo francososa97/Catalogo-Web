@@ -1,13 +1,13 @@
 import React from 'react';
 import PrimeProjects from '../Component/PrimeProjects';
-import Projects from '../Component/Catalogo';
+import BlogPage  from '../Component/BlogPage';
 
 const Catalogo = () => {
 
     return(
         <>
             <PrimeProjects/>
-            <Projects/>
+            <BlogPage />
         </>
     );
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter,MDBIcon, MDBBtn } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter,MDBIcon } from "mdbreact";
 import ImgPerfil from '../Images/Perfil.png';
 
 const FooterPagePro = () => {
@@ -33,7 +33,7 @@ const FooterPagePro = () => {
                 className="rounded-circle z-depth-1 img-fluid"
                 alt="Sample avatar"
               />
-              <h5 className="font-weight-bold mt-4 mb-3">Franco Damian Gonzalez Sosa</h5>
+              <h5 className="font-weight-bold mt-4 mb-3">Franco Damián González Sosa</h5>
               <p className="text-uppercase blue-text">Full stack developer</p>
           </MDBCol>
           <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
@@ -42,7 +42,7 @@ const FooterPagePro = () => {
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
-              Soy un entuciasta de la tecnologia que esta en constante aprendisaje y conocimiento 
+            Soy un entusiasta de la tecnología que está en constante aprendizaje y conocimiento 
             </p>
           </MDBCol>
           <MDBCol md="2" lg="2" xl="2" className="mb-4 dark-grey-text">
@@ -73,38 +73,38 @@ const FooterPagePro = () => {
           </MDBCol>
           <MDBCol md="3" lg="2" xl="2" className="mb-4 dark-grey-text">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>STRENGTHS</strong>
+              <strong>Fortalezas</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
               <a href="#!" className="dark-grey-text">
-                Learner
+              Exelente solución de problemas técnicos.
               </a>
             </p>
             <p>
               <a href="#!" className="dark-grey-text">
-              Relator
+              implementacion de buenas
               </a>
             </p>
             <p>
               <a href="#!" className="dark-grey-text">
-              Analytical
+              Reparacion de sistemas informáticos
               </a>
             </p>
             <p>
               <a href="#!" className="dark-grey-text">
-              Intellection
+              Manejo y utilizacion de servidores
               </a>
             </p>
             <p>
               <a href="#!" className="dark-grey-text">
-              Consistency
+              Comodidad desarrollando back end y front end
               </a>
             </p>
           </MDBCol>
           <MDBCol md="4" lg="3" xl="3" className="mb-4 dark-grey-text">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>Contact</strong>
+              <strong>Contacto</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>

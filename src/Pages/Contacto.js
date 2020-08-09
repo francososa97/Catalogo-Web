@@ -1,5 +1,5 @@
 import React from 'react';
-import {MDBCollapse,MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
+import {MDBCollapse,MDBContainer, MDBRow, MDBCol,MDBIcon, MDBBtn, MDBInput } from "mdbreact";
 import Progress from '../Component/Progress';
 
 class Contacto extends React.Component {
@@ -43,7 +43,7 @@ class Contacto extends React.Component {
           </h2>
     <MDBCollapse isOpen={this.state.collapseContact}>
     <p className="text-center w-responsive mx-auto pb-5">
-      Deja aqui tu consulta o comentario!
+      Deja aquí tu consulta o comentario!
     </p>
     <MDBRow>
       <MDBCol md="9" className="md-0 mb-5">

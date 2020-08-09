@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBProgress, MDBContainer,MDBCollapse,MDBIcon,MDBRow,MDBCol} from 'mdbreact';
+import { MDBProgress, MDBContainer,MDBCollapse,MDBIcon,MDBBtn} from 'mdbreact';
 
 class Progress extends React.Component {
   constructor(props) {
@@ -9,6 +9,7 @@ class Progress extends React.Component {
       isWideEnough: false,
       collapseProgress: false,
       collapseID: '',
+      stateOrder: true,
       Tecnologys: [
         {name:'React', value:75 },
         {name:'.Net', value:55 },
@@ -28,6 +29,7 @@ class Progress extends React.Component {
       ]
     };
     this.onClick = this.onClick.bind(this);
+    this.Order = this.Order.bind(this);
   }
   toggleCollapse = collapseID => () => {
     this.setState(prevState => ({ collapseID: (prevState.collapseID !== collapseID ? collapseID : '') }));
@@ -45,38 +47,33 @@ class Progress extends React.Component {
       collapse: !this.state.collapse
     });
   }
-  
-  render() {
-    let tecnoValues= []
-    let arrayOrder= []
-
-      this.state.Tecnologys.forEach(e=>{
-        tecnoValues.push(e.value)
-      })
-      console.log("desordenado")
-      console.log(tecnoValues)
-      console.log("ordenado")
-      console.log(tecnoValues.sort())
-      this.state.Tecnologys.forEach(Tecnoloy=>{
-        tecnoValues.forEach(tecnoValue =>{
-            if(Tecnoloy.value === tecnoValue )
-            {
-              arrayOrder.push(Tecnoloy)
-            }
+  Order(){
+    if(this.state.stateOrder)
+    {
+      this.state.Tecnologys.sort(function (a, b){
+        return (b.value - a.value)
         })
+    }
+    else
+    {
+      this.state.Tecnologys.sort(function (a, b){
+        return (a.value - b.value)
       })
-      console.log("arrayOrder")
-      console.log(arrayOrder)
+    }
+    this.setState({
+      stateOrder: !this.state.stateOrder
+    });
+  }
+  render() {
   return (
     <>
     <MDBContainer className="mt-5 mb-4 text-center text-md-left">
           <h2 className="h1-responsive font-weight-bold text-center my-5" onClick={()=> this.toggleSingleCollapse('collapseProgress')}>
             Conocimiento tecnico
             {this.state.collapseProgress ? <MDBIcon icon="angle-double-up" className="ml-3"/> : <MDBIcon icon="angle-double-down" className="ml-3"/>}
-            
           </h2>
-       
       <MDBCollapse isOpen={this.state.collapseProgress}>
+      <MDBBtn color="info" onClick={()=> this.Order()}>Ordenar {this.state.stateOrder? "descendentemente" : "ascendentemente"} </MDBBtn>
       {this.state.Tecnologys.map(Tecnology=>{
           return (
             <>

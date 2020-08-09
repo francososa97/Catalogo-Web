@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link,NavLink  } from 'react-router-dom';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav,MDBHamburgerToggler  ,MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView } from 'mdbreact';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { MDBNavbar, MDBNavbarBrand,MDBHamburgerToggler, MDBCollapse} from 'mdbreact';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -61,13 +60,13 @@ class Navbar extends React.Component {
                     </NavLink>
                   </li>
                   <li>
-                  <Link 
+                  <NavLink 
                        to='/Contacto'
                          className="nav-link"
                         activeClassName="active"
                     >
                       <p className="white-text">Contacto</p>
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </MDBCollapse>

@@ -1,8 +1,10 @@
 import React from 'react';
-import {  MDBBox ,MDBJumbotron,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
+import {MDBRow, MDBCol, MDBCard, MDBCardBody} from "mdbreact";
 import Ubicacion from '../Component/Ubicacion';
-import Sitio from '../Images/jumbotron.PNG';
 import MinimalisticIntro from '../Component/MinimalisticIntro';
+import sitio from '../Images/sitio.PNG'
+import sitio2 from '../Images/jumbotron.PNG'
+import WorkExperience from '../Component/WorkExperience';
 
 const Home = () => {
 
@@ -13,113 +15,38 @@ const Home = () => {
         <MDBCardBody>
           <MDBRow>
             <MDBCol lg="5">
-              <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                 <img
                   className="img-fluid"
-                  src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg"
+                  src={sitio}
                   alt=""
                 />
-                <a href="#!">
-                  <MDBMask overlay="white-slight" />
-                </a>
-              </MDBView>
             </MDBCol>
-            <MDBCol lg="7">
-              <a href="#!" className="green-text">
-                <h6 className="font-weight-bold mb-3">
-                  <MDBIcon icon="utensils" className="pr-2" />
-                  Food
-                </h6>
-              </a>
-              <h3 className="font-weight-bold mb-3 p-0">
-                <strong>Title of the news</strong>
-              </h3>
-              <p>
-                Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat facere possimus,
-                omnis voluptas assumenda est, omnis dolor repellendus et aut
-                officiis debitis.
-              </p>
-              <MDBBtn color="success" size="md" className="waves-light ">
-                Read more
-              </MDBBtn>
+            <MDBCol lg="7" className="mt-5">
+                <h3 className="font-weight-bold mb-3 p-0 mt-5">
+                  <strong>En lo académico</strong>
+                </h3>
+                <p>
+                Mi nombre es Franco Damián González Sosa, termine la secundaria técnica en el 2016 me recibí de técnico superior en informática. Luego de eso me dedique a aprender desarrollo web hice bastantes cursos y en el mismo tiempo ingrese a ingeniería en informática en la unlam (Universidad nacional de la Matanza), después de dos años de cursada, me di cuenta que no era el lugar para mi. Actualmente estudio analista de sistemas en el mismo instituto que realice mi secundaria. Estoy en mi segundo año de carrera, tengo planeado continuar mis estudios en ingeniería de sistemas en la UAI (Universidad Abierta Interamericana). En mi linkedin tengo todas mis certificaciones y mas detalles de mi formación académica.
+                </p>
             </MDBCol>
           </MDBRow>
           <hr className="my-5" />
           <MDBRow>
             <MDBCol lg="7">
-              <a href="#!" className="pink-text">
-                <h6 className="font-weight-bold mb-3">
-                  <MDBIcon icon="image" className="pr-2" />
-                  Lifestyle
-                </h6>
-              </a>
-              <h3 className="font-weight-bold mb-3 p-0">
-                <strong>Title of the news</strong>
+            <h3 className="font-weight-bold mb-3 p-0">
+                <strong>En lo laboral</strong>
               </h3>
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident.
-              </p>
-              <MDBBtn
-                color="pink"
-                size="md"
-                className="mb-lg-0 mb-4 waves-light"
-              >
-                Read more
-              </MDBBtn>
+              <WorkExperience/>
             </MDBCol>
             <MDBCol lg="5">
-              <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                 <img
                   className="img-fluid"
-                  src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg"
+                  src={sitio2}
                   alt=""
                 />
-                <a href="#!">
-                  <MDBMask overlay="white-slight" />
-                </a>
-              </MDBView>
             </MDBCol>
           </MDBRow>
           <hr className="my-5" />
-          <MDBRow>
-            <MDBCol lg="5">
-              <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-                <img
-                  className="img-fluid"
-                  src="https://mdbootstrap.com/img/Photos/Others/img (28).jpg"
-                  alt=""
-                />
-                <a href="#!">
-                  <MDBMask overlay="white-slight" />
-                </a>
-              </MDBView>
-            </MDBCol>
-            <MDBCol lg="7">
-              <a href="#!" className="indigo-text">
-                <h6 className="font-weight-bold mb-3">
-                  <MDBIcon icon="suitcase" className="pr-2" />
-                  Food
-                </h6>
-              </a>
-              <h3 className="font-weight-bold mb-3 p-0">
-                <strong>Title of the news</strong>
-              </h3>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia
-                sit amet.
-              </p>
-              <MDBBtn color="indigo" size="md" className="waves-light ">
-                Read more
-              </MDBBtn>
-            </MDBCol>
-          </MDBRow>
-          <Ubicacion/>
         </MDBCardBody>
       </MDBCard>
         </>
