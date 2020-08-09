@@ -88,7 +88,7 @@ const Ubicacion = () => {
                   <MDBBtn tag="a" floating color="blue" className="accent-1">
                     <MDBIcon icon="map-marker-alt" />
                   </MDBBtn>
-                  <p>New York, 94126</p>
+                  <p>Castelar, Ba, 1712</p>
                   <p className="mb-md-0">United States</p>
                 </MDBCol>
                 <MDBCol md="4">
