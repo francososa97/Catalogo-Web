@@ -6,6 +6,7 @@ import Footer from './Component/Footer';
 import Home from './Pages/Home';
 import Catalogo from './Pages/Catalogo';
 import Contacto from './Pages/Contacto';
+import Test from './Component/Test';
 
 function App() {
   return (

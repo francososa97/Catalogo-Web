@@ -35,7 +35,7 @@ class Navbar extends React.Component {
     return (
       <div>
         <header>
-            <MDBNavbar color="blue lighten-1">
+            <MDBNavbar color="blue lighten-1" onClick={()=> this.toggleSingleCollapse('collapse1')} >
             <MDBNavbarBrand>
             <strong className="white-text">Franco Sosa</strong>
             </MDBNavbarBrand>

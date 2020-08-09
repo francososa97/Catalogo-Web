@@ -1,6 +1,6 @@
 import React from 'react';
 import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
-
+import Ubicacion from '../Component/Ubicacion';
 
 const Home = () => {
 
@@ -157,6 +157,7 @@ const BlogPage = () => {
             </MDBBtn>
           </MDBCol>
         </MDBRow>
+        <Ubicacion/>
       </MDBCardBody>
     </MDBCard>
   );

@@ -1,9 +1,14 @@
 import React from 'react';
+import PrimeProjects from '../Component/PrimeProjects';
+import Projects from '../Component/Catalogo';
 
 const Catalogo = () => {
 
     return(
-            <p>Catalogo</p>
+        <>
+            <PrimeProjects/>
+            <Projects/>
+        </>
     );
 
 };
