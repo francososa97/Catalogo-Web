@@ -35,7 +35,6 @@ const FooterPagePro = () => {
               />
               <h5 className="font-weight-bold mt-4 mb-3">Franco Damian Gonzalez Sosa</h5>
               <p className="text-uppercase blue-text">Full stack developer</p>
-              <p className="text-uppercase blue-text">Software engineer</p>
           </MDBCol>
           <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
             <h6 className="text-uppercase font-weight-bold">
