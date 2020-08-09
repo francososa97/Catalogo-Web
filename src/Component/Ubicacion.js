@@ -6,7 +6,7 @@ const Ubicacion = () => {
     return(
         <section className="my-5">
           <h2 className="h1-responsive font-weight-bold text-center my-5">
-            Contact us
+            Contactanos
           </h2>
           <p className="text-center w-responsive mx-auto pb-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
@@ -89,21 +89,19 @@ const Ubicacion = () => {
                     <MDBIcon icon="map-marker-alt" />
                   </MDBBtn>
                   <p>Castelar, Ba, 1712</p>
-                  <p className="mb-md-0">United States</p>
+                  <p className="mb-md-0">Argentina</p>
                 </MDBCol>
                 <MDBCol md="4">
                   <MDBBtn tag="a" floating color="blue" className="accent-1">
                     <MDBIcon icon="phone" />
                   </MDBBtn>
-                  <p>+ 01 234 567 89</p>
-                  <p className="mb-md-0">Mon - Fri, 8:00-22:00</p>
+                  <p>+ 54911 44186438</p>
                 </MDBCol>
                 <MDBCol md="4">
                   <MDBBtn tag="a" floating color="blue" className="accent-1">
                     <MDBIcon icon="envelope" />
                   </MDBBtn>
-                  <p>info@gmail.com</p>
-                  <p className="mb-md-0">sale@gmail.com</p>
+                  <p className="mb-md-0">franco.gonzalez.sosa@gmail.com</p>
                 </MDBCol>
               </MDBRow>
             </MDBCol>

@@ -62,8 +62,8 @@ class Navbar extends React.Component {
                   </li>
                   <li>
                   <Link 
-                        to='/Contacto'
-                        className="nav-link"
+                       to='/Contacto'
+                         className="nav-link"
                         activeClassName="active"
                     >
                       <p className="white-text">Contacto</p>

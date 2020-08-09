@@ -1,22 +1,16 @@
 import React from 'react';
-import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
+import {  MDBBox ,MDBJumbotron,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
 import Ubicacion from '../Component/Ubicacion';
+import Sitio from '../Images/jumbotron.PNG';
+import MinimalisticIntro from '../Component/MinimalisticIntro';
 
 const Home = () => {
 
     return(
         <>
-        <MDBCard className="">
+    <MinimalisticIntro/>
+    <MDBCard className="">
         <MDBCardBody>
-          <h2 className="h1-responsive font-weight-bold text-center my-5">
-            Recent posts
-          </h2>
-          <p className="text-center w-responsive mx-auto mb-5">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </p>
           <MDBRow>
             <MDBCol lg="5">
               <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
@@ -46,13 +40,6 @@ const Home = () => {
                 omnis voluptas assumenda est, omnis dolor repellendus et aut
                 officiis debitis.
               </p>
-              <p>
-                by
-                <a href="#!">
-                  <strong>Carine Fox</strong>
-                </a>
-                , 19/08/2018
-              </p>
               <MDBBtn color="success" size="md" className="waves-light ">
                 Read more
               </MDBBtn>
@@ -75,13 +62,6 @@ const Home = () => {
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
                 dolores et quas molestias excepturi sint occaecati cupiditate
                 non provident.
-              </p>
-              <p>
-                by
-                <a href="#!">
-                  <strong>Carine Fox</strong>
-                </a>
-                , 14/08/2018
               </p>
               <MDBBtn
                 color="pink"
@@ -133,13 +113,6 @@ const Home = () => {
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
                 voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia
                 sit amet.
-              </p>
-              <p>
-                by
-                <a href="#!">
-                  <strong>Carine Fox</strong>
-                </a>
-                , 11/08/2018
               </p>
               <MDBBtn color="indigo" size="md" className="waves-light ">
                 Read more
