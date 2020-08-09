@@ -31,25 +31,6 @@ class Contacto extends React.Component {
   }
 
   render() {
-
-  const Tecnologys = [
-    {name:'React', value:75 },
-    {name:'.Net', value:55 },
-    {name:'Asp.Net core', value:45 },
-    {name:'Sql', value:65 },
-    {name:'Mongo', value:20 },
-    {name:'Html', value:95},
-    {name:'Css', value:80 },
-    {name:'Sass', value:85 },
-    {name:'Responsive', value:90 },
-    {name:'JavaScript', value:85 },
-    {name:'jquery', value:90 },
-    {name:'Vue.js', value:35},
-    {name:'React Native', value:95 },
-    {name:'Node', value:40 },
-    {name:'Boostrap', value:70 },
-  ];
-  
   return(
     <>
 
