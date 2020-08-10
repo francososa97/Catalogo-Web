@@ -42,7 +42,7 @@ const FooterPagePro = () => {
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
-            Soy un entusiasta de la tecnología que está en constante aprendizaje y conocimiento 
+              Soy un entusiasta de la tecnología que está en constante aprendizaje y conocimiento
             </p>
           </MDBCol>
           <MDBCol md="2" lg="2" xl="2" className="mb-4 dark-grey-text">

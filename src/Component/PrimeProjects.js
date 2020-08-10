@@ -52,10 +52,13 @@ class PrimeProjects extends React.Component {
                 <strong> Recetas</strong>
               </h6>
               <h3 className='py-3 font-weight-bold'>
-                <strong>Recetas de bebidas</strong>
+                <strong>
+                 Recetas de bebidas
+                </strong>
               </h3>
               <p className='pb-3'>
-              Con esta útil aplicación web que utiliza SAS (software as service) usted podrá hacer búsquedas de bebidas tanto por nombre como por categoría. En la misma podrá visualizar los resultados y podrá acceder un apartado en una pantalla modal donde encontrará la preparación y los ingredientes en una lista desordenada.
+              Con esta útil aplicación web que utiliza SAS (software as service) usted podrá hacer búsquedas de bebidas tanto por nombre como por categoría. 
+              En la misma podrá visualizar los resultados y podrá acceder a un apartado en una pantalla modal donde encontrará la preparación y los ingredientes en una lista desordenada.
               </p>
               <a href="https://serene-saha-ee66a7.netlify.app/">
                 <MDBBtn color='secondary' rounded size='md'>
@@ -83,9 +86,10 @@ class PrimeProjects extends React.Component {
                   <strong>Criptomonedas al instante</strong>
                 </h3>
                 <p className='pb-3'>
-                En esta aplicación web vamos a poder realizar todas las funciones de un CRUD (Crear, Leer, Actualizar y Borrar) tradicional. En el mismo vamos a gestionar productos o platos de un restaurant. Además, como valor agregado la aplicación cuenta con ciertas validaciones para generar productos o platos y actualiza el stock en el instante.
+                  Gracias a esta aplicación vamos a poder consultar la cotización de diferentes criptomonedas en el instante, 
+                  además de esto al momento de darnos la cotización también nos dará el precio más alto del día y el más bajo también y 
+                  cuando fue la última actualización de la cotización.
                 </p>
-                
                 <a href="https://cotizador-bitcoin-monedas.netlify.app/">
                 <MDBBtn color='pink' rounded size='md'>
                     <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
@@ -113,7 +117,9 @@ class PrimeProjects extends React.Component {
                   <strong>Restaurante crud</strong>
                 </h3>
                 <p className='pb-3'>
-                  En esta aplicacion web vamos a poder realizar todas las funciones de un CRUD (Crear, Leer, Actualizar y Borrar) tradicional. En el mismo vamos a gestionar productos o platos de un restaurant. Ademas como valor agregado la aplicacion cuenta con ciertas validaciones para generar productos o platos y actualiza el stock en el instante.
+                  En esta aplicación web vamos a poder realizar todas las funciones de un CRUD (Crear, Leer, Actualizar y Borrar) tradicional. 
+                  En el mismo vamos a gestionar productos o platos de un restaurante. Además, como valor agregado, 
+                  la aplicación cuenta con ciertas validaciones para generar productos o platos y actualiza el stock en el instante.
                 </p>
                 <a href="https://restaurant-descargarjson.netlify.app/">
                 <MDBBtn color='success' rounded size='md'>
