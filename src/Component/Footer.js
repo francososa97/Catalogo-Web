@@ -83,7 +83,7 @@ const FooterPagePro = () => {
             </p>
             <p>
               <a href="#!" className="dark-grey-text">
-              implementacion de buenas
+              implementacion de buenas practicas
               </a>
             </p>
             <p>

@@ -21,7 +21,7 @@ const BlogPage = () => {
       url:"https://citas-reservas-1-1-0.netlify.app/"
     },
     {
-      title:"Prsupuestador automatico",
+      title:"Presupuestador automatico",
       tecnologyBody:"se define un valor del presupuesto total que se guarda en el state. luego con nuevos valores que cargados por el usuario, se restan del presupuesto total y genera una lista de los gastos. En el caso de superar el presupuesto total la aplicacion web lo informara por debajo del presupuesto restante.",
       userBody:"el usuario elige un presupuesto total. Luego podra cargar los gastos que se restaran del mismo y en el caso de que supere dicho presupuesto se convierta en 0 avisara través de una card de error, que ha superado.",
       srcimg:presupuesto,
