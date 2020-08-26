@@ -23,7 +23,6 @@ function App() {
           <Footer/>
         </Router>
     </CatalogueContext>
-
     </>
   );
 }
