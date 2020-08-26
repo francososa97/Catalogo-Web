@@ -1,5 +1,8 @@
 import React from "react";
-import {  MDBCollapse,MDBRow, MDBCol, MDBCard, MDBIcon, MDBBtn  } from "mdbreact";
+import {  MDBCollapse,MDBRow, MDBCol, MDBCard, MDBIcon, MDBBtn } from "mdbreact";
+import recetas from '../Images/recetas.jpg'
+import bitcoin from '../Images/bitcoin.jpg'
+import cafe from '../Images/cafe.jpg'
 
 class PrimeProjects extends React.Component {
   constructor(props) {
@@ -39,14 +42,13 @@ class PrimeProjects extends React.Component {
       <MDBCollapse  isOpen={this.state.collapseProjects}>
       <MDBRow>
         <MDBCol md='12' className='mb-4'>
-          <MDBCard
-            className='card-image'
-            style={{
-              backgroundImage:
-                'url(https://pixabay.com/get/5ee4d040494fad0bffd8992cc62b347f163cdae04e507440722f79d59e45cd_1280.jpg)'
-            }}
-          >
-            <div className='text-white text-center d-flex flex-column align-items-center rgba-black-strong py-5 px-4 rounded'>
+          <MDBCard style={{backgroundImage:`url(${recetas})`}}>
+            <div 
+              style={{
+                backgroundImage:
+                  {recetas}
+              }} 
+              className='text-white text-center d-flex flex-column align-items-center rgba-black-strong py-5 px-4 rounded'>
               <h6 className='purple-text'>
                 <MDBIcon icon='cocktail' />
                 <strong> Recetas</strong>
@@ -69,15 +71,8 @@ class PrimeProjects extends React.Component {
           </MDBCard>
         </MDBCol>
         <MDBCol md='6' className='md-0 mb-4'>
-          <MDBCard
-            className='card-image'
-            style={{
-              backgroundImage:
-                'url(https://pixabay.com/get/54e0d5444d54a514f6da8c7dda79367d163edde657546c4870267cd4954fc55fbf_1280.jpg)'
-            }}
-          >
-            <div className='text-white text-center  d-flex align-items-center rgba-black-strong py-5 px-4 rounded'>
-              <div>
+        <MDBCard style={{backgroundImage:`url(${bitcoin})`}}>
+            <div className='text-white text-center align-items-center rgba-black-strong py-5 px-4 rounded'  style={{padding: 30}} >
                 <h6 className='pink-text'>
                   <MDBIcon icon='coins' />
                   <strong> Cotizador</strong>
@@ -95,19 +90,16 @@ class PrimeProjects extends React.Component {
                     <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
                 </MDBBtn>
               </a>
-              </div>
             </div>
           </MDBCard>
         </MDBCol>
         <MDBCol md='6' className='md-0 mb-4'>
           <MDBCard
             className='card-image'
-            style={{
-              backgroundImage:
-                'url(https://pixabay.com/get/52e4dc4a4f50b108f5d084609629347d143cdde1564c704c7c287bd6954dc35a_1280.jpg)'
-            }}
+            style={{backgroundImage:`url(${cafe})`}}
           >
-            <div className='text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded'>
+            <div 
+                className='text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded'>
               <div>
                 <h6 className='green-text'>
                   <MDBIcon icon='utensils' />

@@ -1,6 +1,5 @@
 import React from 'react';
 import {MDBRow, MDBCol, MDBCard, MDBCardBody} from "mdbreact";
-import Ubicacion from '../Component/Ubicacion';
 import MinimalisticIntro from '../Component/MinimalisticIntro';
 import sitio from '../Images/sitio.PNG'
 import sitio2 from '../Images/jumbotron.PNG'

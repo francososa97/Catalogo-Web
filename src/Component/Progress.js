@@ -10,23 +10,21 @@ class Progress extends React.Component {
       collapseProgress: false,
       collapseID: '',
       stateOrder: true,
-      Tecnologys: [
-        {name:'React', value:75 },
-        {name:'.Net', value:55 },
-        {name:'Asp.Net core', value:45 },
-        {name:'Sql', value:65 },
-        {name:'Mongo', value:20 },
-        {name:'Html', value:95},
-        {name:'Css', value:80 },
-        {name:'Sass', value:85 },
-        {name:'Responsive', value:90 },
-        {name:'JavaScript', value:85 },
-        {name:'jquery', value:90 },
-        {name:'Vue.js', value:35},
-        {name:'React Native', value:95 },
-        {name:'Node', value:40 },
-        {name:'Boostrap', value:70 },
-      ]
+      Tecnologys: [{name:'React', value:75 },
+      {name:'.Net', value:55 },
+      {name:'Asp.Net core', value:45 },
+      {name:'Sql', value:65 },
+      {name:'Mongo', value:20 },
+      {name:'Html', value:95},
+      {name:'Css', value:80 },
+      {name:'Sass', value:85 },
+      {name:'Responsive', value:90 },
+      {name:'JavaScript', value:85 },
+      {name:'jquery', value:90 },
+      {name:'Vue.js', value:35},
+      {name:'React Native', value:95 },
+      {name:'Node', value:40 },
+      {name:'Boostrap', value:70 },],
     };
     this.onClick = this.onClick.bind(this);
     this.Order = this.Order.bind(this);
@@ -80,7 +78,7 @@ class Progress extends React.Component {
               <p className="font-weight-bold mt-4">
               {Tecnology.name}
               </p>
-              <MDBProgress material value={Tecnology.value} height="20px">
+              <MDBProgress key={Tecnology.name} material value={Tecnology.value} height="20px">
                 {Tecnology.value + "%"}
               </MDBProgress>
             </>
@@ -91,6 +89,6 @@ class Progress extends React.Component {
     </>
      );
     }
-  }
+}
   
 export default Progress;

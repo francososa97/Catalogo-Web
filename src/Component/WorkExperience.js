@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import {MDBCollapse, MDBCard, MDBCardBody,MDBBox  } from "mdbreact";
-
+import {MDBCollapse, MDBCard, MDBCardBody,MDBBox} from "mdbreact";
+import VideoModal from './VideoModal';
 class WorkExperience extends Component {
 state={
   collapseID: "collapse1"
@@ -40,6 +40,7 @@ const { collapseID } = this.state;
               Desarrollamos un sistema de escritorio hecho con c# cuya función principal era comunicar, lo nombramos “Holograma”, además de la aplicación que desarrollamos, 
               también tuvimos que generar un soporte para el monitor y como parte esencial teníamos una pirámide de acrílico que también tuvimos que fabricar. 
               Teníamos como objetivo usar APIs de Skype para poder hacer una videollamada con hologramas. ¡Sí sí, como en Star Wars!
+              <VideoModal/>
             </MDBCardBody>
           </MDBCollapse>
         </MDBCard>

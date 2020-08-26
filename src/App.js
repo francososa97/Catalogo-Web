@@ -6,19 +6,24 @@ import Footer from './Component/Footer';
 import Home from './Pages/Home';
 import Catalogo from './Pages/Catalogo';
 import Contacto from './Pages/Contacto';
+import CatalogueContext from './context/CatalogueContext';
+
 
 function App() {
   return (
     <>
-    <Router>
-    <Navbar/>
-      <Switch>
-        <Route exact path="/" component={Home} />
-          <Route exact path="/Catalogo" component={Catalogo} />
-          <Route exact path="/Contacto" component={Contacto} />
-      </Switch>
-    <Footer/>
-    </Router>
+    <CatalogueContext>
+        <Router>
+          <Navbar/>
+          <Switch>
+            <Route exact path="/" component={Home} />
+              <Route exact path="/Catalogo" component={Catalogo} />
+              <Route exact path="/Contacto" component={Contacto} />
+          </Switch>
+          <Footer/>
+        </Router>
+    </CatalogueContext>
+
     </>
   );
 }
