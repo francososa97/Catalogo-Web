@@ -10,7 +10,7 @@ class Progress extends React.Component {
       collapseProgress: false,
       collapseID: '',
       stateOrder: true,
-      Tecnologys: [{name:'React', value:75 },
+      Tecnologys: [{name:'React', value:95 },
       {name:'.Net', value:55 },
       {name:'Asp.Net core', value:45 },
       {name:'Sql', value:65 },
@@ -22,7 +22,7 @@ class Progress extends React.Component {
       {name:'JavaScript', value:85 },
       {name:'jquery', value:90 },
       {name:'Vue.js', value:35},
-      {name:'React Native', value:95 },
+      {name:'React Native', value:75},
       {name:'Node', value:40 },
       {name:'Boostrap', value:70 },],
     };
