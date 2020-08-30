@@ -2,7 +2,7 @@ import React from 'react';
 import {MDBCollapse,MDBContainer, MDBRow, MDBCol,MDBIcon, MDBBtn, MDBInput } from "mdbreact";
 import Progress from '../Component/Progress';
 
-class Contacto extends React.Component {
+class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,9 +33,7 @@ class Contacto extends React.Component {
   render() {
   return(
     <>
-
     <Progress/>
-
     <MDBContainer className="mt-5 mb-4 text-center text-md-left">
           <h2 className="h1-responsive font-weight-bold text-center my-5" onClick={()=> this.toggleSingleCollapse('collapseContact')}>
             Contacto
@@ -85,7 +83,7 @@ class Contacto extends React.Component {
         </form>
         <div className="text-center text-md-left">
           <MDBBtn color="primary" size="md">
-            Send
+            Enviar
           </MDBBtn>
         </div>
       </MDBCol>
@@ -110,7 +108,6 @@ class Contacto extends React.Component {
   </MDBContainer>
   </>
   );
-
   }
 };
-export default Contacto;
+export default Contact;

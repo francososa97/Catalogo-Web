@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter,MDBIcon } from "mdbreact";
-import ImgPerfil from '../Images/Perfil.png';
+import imgProfile from '../Images/Perfil.png';
 
 const FooterPagePro = () => {
   return (
@@ -29,7 +29,7 @@ const FooterPagePro = () => {
           <MDBCol md="2" lg="2" xl="2" className="mb-4 dark-grey-text">
           <img
                 tag="img"
-                src={ImgPerfil}
+                src={imgProfile}
                 className="rounded-circle z-depth-1 img-fluid"
                 alt="Sample avatar"
               />

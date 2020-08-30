@@ -47,7 +47,7 @@ class MinimalisticIntro extends React.Component {
                         to='/Catalogo'
                         className="nav-link"
                         activeClassName="active"
-                    >
+                >
                    <p className="black-text">Catalogo</p> 
                   </NavLink>
                 </MDBBtn>
@@ -56,7 +56,7 @@ class MinimalisticIntro extends React.Component {
                       to='/Contacto'
                       className="nav-link"
                     activeClassName="active"
-                    >
+                >
                    <p className="black-text">Contacto</p> 
                   </NavLink>
                 </MDBBtn>

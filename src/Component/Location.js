@@ -1,8 +1,7 @@
 import React from 'react';
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
 
-const Ubicacion = () => {
-
+const Location = () => {
     return(
         <section className="my-5">
           <h2 className="h1-responsive font-weight-bold text-center my-5">
@@ -105,4 +104,4 @@ const Ubicacion = () => {
       );
 
 };
-export default Ubicacion;
+export default Location;

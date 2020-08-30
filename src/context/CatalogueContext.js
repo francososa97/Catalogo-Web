@@ -1,10 +1,10 @@
 import React, { createContext, useState, useEffect } from 'react';
 import store from '../Images/store.PNG';
-import veterinario from '../Images/veterinario.PNG';
+import veterinarian from '../Images/veterinario.PNG';
 import br from '../Images/br.PNG';
-import canciones from '../Images/canciones.PNG';
-import clima from '../Images/clima.PNG';
-import presupuesto from '../Images/presupuesto.PNG';
+import song from '../Images/canciones.PNG';
+import weather from '../Images/clima.PNG';
+import budget from '../Images/presupuesto.PNG';
 import coin from '../Images/coin.PNG';
 
 // Crear el Context
@@ -19,27 +19,27 @@ const CatalogueProvider = (props) => {
 
     // llenamos el hooks antes de que se cargue el archivo
     useEffect(() => {
-        const obtenerCatalogo = async () => {
+        const getCatalogue = async () => {
           const projects= [
             {
               title:"Generador de turnos de veterinario",
               tecnologyBody:"Con ayuda del state de react y hooks con props se obtuvo esta aplicación web que guarda información de un formulario para registrar turnos de una veterinaria, si se actualiza o se cierra la página esto se guarda en cache y cuando vuelva a ingresar, se podrá acceder nuevamente a la información.",
               userBody:" El usuario puede generar turnos para una veterinaria y si ocurre el caso de que la aplicación se cierra involuntariamente persistirá la información. El usuario tiene la opción de eliminar el turno definitivamente.",
-              srcimg:veterinario,
+              srcimg:veterinarian,
               url:"https://citas-reservas-1-1-0.netlify.app/"
             },
             {
               title:"Presupuestador automático",
               tecnologyBody:"Se define un valor del presupuesto total que se guarda en el state. Luego con nuevos valores, que cargados por el usuario, se restan del presupuesto total y genera una lista de los gastos. En el caso de superar el presupuesto total la aplicación web lo informará por debajo del presupuesto restante.",
               userBody:"El usuario elige un presupuesto total. Luego podrá cargar los gastos que se restarán del mismo y en el caso de que supere dicho presupuesto, se convierta en 0 avisará través de una card de error, que ha superado.",
-              srcimg:presupuesto,
+              srcimg:budget,
               url:"https://caclcular-presupuesto.netlify.app/"
             },
             {
               title:"Clima react",
               tecnologyBody:"Consulta una api de climas, guarda la información en el state y lo muestra en un componente parametrizable por la respuesta de la api.", 
               userBody:"Cargando la información al formulario, mostrará el clima de la zona elegida mostrando el resultado de una manera amigable para el usuario.",
-              srcimg:clima,
+              srcimg:weather,
               url:"https://clima-react-practica.netlify.app/"
             },
             {
@@ -60,7 +60,7 @@ const CatalogueProvider = (props) => {
               title:"Buscador de letras de canciones",
               tecnologyBody:"Utiliza dos apis una para consultar la letra y otra que es un buscador de imágenes que se le atribuyen dos valores: el de artista y el de la canción entonces otorga una imagen del artista y la letra de la canción buscada.",
               userBody:"El usuario completando el formulario podrá acceder a una sección oculta de la página con el resultado de la búsqueda que hizo.",
-              srcimg:canciones,
+              srcimg:song,
               url:"https://buscar-letra-musica.netlify.app/"
             },
             {
@@ -73,7 +73,7 @@ const CatalogueProvider = (props) => {
           ]
           saveCatalog(projects);
         }
-        obtenerCatalogo();
+        getCatalogue();
     }, []);
 
     return (

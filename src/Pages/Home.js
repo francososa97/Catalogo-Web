@@ -1,8 +1,8 @@
 import React from 'react';
 import {MDBRow, MDBCol, MDBCard, MDBCardBody} from "mdbreact";
 import MinimalisticIntro from '../Component/MinimalisticIntro';
-import sitio from '../Images/sitio.PNG'
-import sitio2 from '../Images/jumbotron.PNG'
+import site from '../Images/sitio.PNG'
+import site2 from '../Images/jumbotron.PNG'
 import WorkExperience from '../Component/WorkExperience';
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
                   <MDBCol lg="5">
                       <img
                         className="img-fluid"
-                        src={sitio}
+                        src={site}
                         alt=""
                       />
                   </MDBCol>
@@ -33,7 +33,6 @@ const Home = () => {
                       </p>
                   </MDBCol>
                 </MDBRow>
-                
                 <hr className="my-5" />
                 <MDBRow>
                   <MDBCol lg="7">
@@ -45,7 +44,7 @@ const Home = () => {
                   <MDBCol lg="5">
                       <img
                         className="img-fluid"
-                        src={sitio2}
+                        src={site2}
                         alt=""
                       />
                   </MDBCol>
