@@ -4,7 +4,7 @@ import MinimalisticIntro from '../Component/MinimalisticIntro';
 import site from '../Images/sitio.PNG'
 import site2 from '../Images/jumbotron.PNG'
 import WorkExperience from '../Component/WorkExperience';
-
+import Certification from '../Component/Certification';
 const Home = () => {
   
     return(
@@ -50,6 +50,7 @@ const Home = () => {
                   </MDBCol>
                 </MDBRow>
                 <hr className="my-5" />
+                <Certification/>
               </MDBCardBody>
             </MDBCard>
         </>
