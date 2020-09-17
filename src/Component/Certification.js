@@ -39,10 +39,7 @@ const Certification = () => {
   return (
       <>
     <section className='text-center my-5'>
-      <h2 className='h1-responsive font-weight-bold text-center my-5'>Certificaciones</h2>
-      <p className='grey-text text-center w-responsive mx-auto mb-5'>
-        Dentro de esta Seccion podras encontrar algunas de mis Certificaciones y cursos finalizados
-      </p>
+      <h2 className='h1-responsive font-weight-bold text-center my-5'>Mis certificaciones</h2>
       <MDBCarousel activeItem={1} length={3} slide={true} showControls={true} showIndicators={true} multiItem>
         <MDBCarouselInner>
           <MDBRow>
