@@ -56,35 +56,34 @@ const Certification = () => {
                 {groupOne.map(groupOne=>{
                     return(
                         <MDBCol lg="3" md="6" className="mb-lg-0 mb-4">
-                            <MDBCard narrow ecommerce className='mb-2'>
-                                    <MDBCardImage
-                                        cascade
-                                        top
-                                        src={groupOne.technologyImage}
-                                        alt='sample photo'
-                                    />
-                                    <MDBCardBody cascade>
-                                        <a href='#!' className='text-muted'>
-                                        <h5>{groupOne.title}</h5>
-                                        </a>
-                                        <MDBCardTitle>
-                                        <strong>
-                                            <a href='#!'>{groupOne.Institute}</a>
-                                        </strong>
-                                        </MDBCardTitle>
-                                        <MDBCardText>
-                                            <label className='float-left'>
-                                                Obtenida el: {groupOne.expeditionDate.toLocaleDateString()}
-                                            </label>
-                                            <label className='float-right'>
-                                                {groupOne.expirationDate === null? 'Sin fecha de vencimiento': `vence el: ${groupOne.expirationDate.toLocaleDateString()}`}
-                                            </label>
-                                        </MDBCardText>
-                                        <MDBCardFooter className='px-1'>
-                                            <button color="info" type="button" class="btn btn-primary btn-lg btn-block" href={groupeTwo.urlCertification}>Certification</button>
-                                        </MDBCardFooter>
-                                    </MDBCardBody>
-                            </MDBCard>
+                        <MDBCard>
+                        <MDBCardImage
+                                    cascade
+                                    top
+                                    src={groupOne.technologyImage}
+                                    alt='sample photo'
+                                    height="200"
+                                />
+                            <MDBCardBody>
+                            <MDBCardTitle>
+                            <h5>{groupOne.title}</h5>
+                            <strong>
+                                <a href='#!'>{groupOne.Institute}</a>
+                            </strong>
+                            </MDBCardTitle>
+                            <MDBCardText> 
+                                <label className='float-left p-1'>
+                                    Obtenida el: {groupOne.expeditionDate.toLocaleDateString()}
+                                </label>
+                                <label className='float-right p-1'>
+                                    {groupOne.expirationDate === null? 'Sin fecha de vencimiento': `vence el: ${groupOne.expirationDate.toLocaleDateString()}`}
+                                </label>
+                            </MDBCardText>
+                            <a href={groupOne.urlCertification}>
+                            <button color="info" type="button" class="btn btn-primary btn-lg btn-block">Certification</button>
+                            </a>
+                            </MDBCardBody>
+                        </MDBCard>
                         </MDBCol>
                     )
                 })}
@@ -96,37 +95,36 @@ const Certification = () => {
               {groupeTwo.map(groupeTwo=>{
                     return(
                         <MDBCol lg="3" md="6" className="mb-lg-0 mb-4">
-                            <MDBCard narrow ecommerce className='mb-2'>
-                                    <MDBCardImage
-                                        cascade
-                                        top
-                                        src={groupeTwo.technologyImage}
-                                        alt='sample photo'
-                                    />
-                                    <MDBCardBody cascade>
-                                        <a href='#!' className='text-muted'>
-                                        <h5>{groupeTwo.title}</h5>
-                                        </a>
-                                        <MDBCardTitle>
-                                        <strong>
-                                            <a href='#!'>{groupeTwo.Institute}</a>
-                                        </strong>
-                                        </MDBCardTitle>
-                                        <MDBCardText>
-                                            <label className='float-left'>
-                                                Obtenida el: {groupeTwo.expeditionDate.toLocaleDateString()}
-                                            </label>
-                                            <label className='float-right'>
-                                                {groupeTwo.expirationDate === null? 'Sin fecha de vencimiento': `vence el: ${groupeTwo.expirationDate.toLocaleDateString()}`}
-                                            </label>
-                                        </MDBCardText>
-                                        <MDBCardFooter className='px-1'>
-                                            <button color="info" type="button" class="btn btn-primary btn-lg btn-block" href={groupeTwo.urlCertification}>Certification</button>
-                                        </MDBCardFooter>
-                                    </MDBCardBody>
-                            </MDBCard>
+                        <MDBCard>
+                        <MDBCardImage
+                                    cascade
+                                    top
+                                    src={groupeTwo.technologyImage}
+                                    alt='sample photo'
+                                    height="200"
+                                />
+                            <MDBCardBody>
+                            <MDBCardTitle>
+                            <h5>{groupeTwo.title}</h5>
+                            <strong>
+                                <a href='#!'>{groupeTwo.Institute}</a>
+                            </strong>
+                            </MDBCardTitle>
+                            <MDBCardText> 
+                                <label className='float-left p-1'>
+                                    Obtenida el: {groupeTwo.expeditionDate.toLocaleDateString()}
+                                </label>
+                                <label className='float-right  p-1'>
+                                    {groupeTwo.expirationDate === null? 'Sin fecha de vencimiento': `vence el: ${groupeTwo.expirationDate.toLocaleDateString()}`}
+                                </label>
+                            </MDBCardText>
+                            <a href={groupeTwo.urlCertification}>
+                            <button color="info" type="button" class="btn btn-primary btn-lg btn-block">Certification</button>
+                            </a>
+                            </MDBCardBody>
+                        </MDBCard>
                         </MDBCol>
-                    )
+                        )
                 })}
               </MDBRow>
             </MDBCarouselItem>
