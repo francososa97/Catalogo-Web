@@ -41,14 +41,21 @@ const Certification = () => {
         {'title': 'Diseño web','Institute': 'Universidad Tecnológica Nacional','urlCertification':null,'expeditionDate':  new Date("2017,08,01"),'expirationDate':null,'technologyImage': utn,'id':12},
     ];
 
-    let groupOne=certifications.filter(x=> x.id <=4)
-    let groupeTwo=certifications.filter(x=> x.id > 4 && x.id <=8)
-    let groupeThree=certifications.filter(x=> x.id > 8 && x.id <=12)
+   var orderCertifications= certifications.sort(function (a, b) {
+        if(a.expeditionDate.getDay() < b.expeditionDate.getDay() || a.expeditionDate.getMonth() < b.expeditionDate.getMonth() && a.expeditionDate.getFullYear() < b.expeditionDate.getFullYear()) return -1;
+        if(a.expeditionDate.getDay() > b.expeditionDate.getDay() || a.expeditionDate.getMonth() > b.expeditionDate.getMonth() && a.expeditionDate.getFullYear() > b.expeditionDate.getFullYear()) return 1;
 
-    console.log(groupOne)
-    console.log(groupeTwo)
-    console.log(groupeThree)
-    
+        return 0;
+    });
+    console.log('%c Certificados ordenados por fechas', 'color: orange;')
+    console.table(orderCertifications)
+
+    let lastCertification = orderCertifications[orderCertifications.length - 1]
+    console.log(`%c Mi ultima certificacion fue la de ${lastCertification.title}`, 'color: orange;')
+
+    let groupOne=[{...orderCertifications[0]},{...orderCertifications[1]},{...orderCertifications[2]},{...orderCertifications[3]}]
+    let groupeTwo=[{...orderCertifications[4]},{...orderCertifications[5]},{...orderCertifications[6]},{...orderCertifications[7]}]
+    let groupeThree=[{...orderCertifications[8]},{...orderCertifications[9]},{...orderCertifications[10]},{...orderCertifications[11]}]
 
   return (
       <>
@@ -61,7 +68,7 @@ const Certification = () => {
             <MDBRow>
                 {groupOne.map(groupOne=>{
                     return(
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-4">
+                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-4" key={groupOne.id}>
                         <MDBCard>
                         <MDBCardImage
                                     cascade
@@ -72,7 +79,9 @@ const Certification = () => {
                                 />
                             <MDBCardBody>
                             <MDBCardTitle>
-                            <h5>{groupOne.title}</h5>
+                            <MDBCol lg="12" md="12">
+                                <h5>{groupOne.title}</h5>
+                            </MDBCol>
                             <strong>
                                 <a href='#!'>{groupOne.Institute}</a>
                             </strong>
@@ -85,9 +94,7 @@ const Certification = () => {
                                     {groupOne.expirationDate === null? 'Sin fecha de vencimiento': `vence el: ${groupOne.expirationDate.toLocaleDateString()}`}
                                 </label>
                             </MDBCardText>
-                            <a href={groupOne.urlCertification}>
-                            <button color="info" type="button" class="btn btn-primary btn-lg btn-block">Certification</button>
-                            </a>
+                            {groupOne.urlCertification === null ? null :  <a href={groupOne.urlCertification}><button color="info" type="button" className="btn btn-primary btn-lg btn-block">Certification</button></a> }
                             </MDBCardBody>
                         </MDBCard>
                         </MDBCol>
@@ -100,7 +107,7 @@ const Certification = () => {
               <MDBRow>
               {groupeTwo.map(groupeTwo=>{
                     return(
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-4">
+                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-4"  key={groupeTwo.id}>
                         <MDBCard>
                         <MDBCardImage
                                     cascade
@@ -111,7 +118,9 @@ const Certification = () => {
                                 />
                             <MDBCardBody>
                             <MDBCardTitle>
-                            <h5>{groupeTwo.title}</h5>
+                            <MDBCol lg="12" md="12">
+                                <h5>{groupeTwo.title}</h5>
+                            </MDBCol>
                             <strong>
                                 <a href='#!'>{groupeTwo.Institute}</a>
                             </strong>
@@ -124,9 +133,7 @@ const Certification = () => {
                                     {groupeTwo.expirationDate === null? 'Sin fecha de vencimiento': `vence el: ${groupeTwo.expirationDate.toLocaleDateString()}`}
                                 </label>
                             </MDBCardText>
-                            <a href={groupeTwo.urlCertification}>
-                            <button color="info" type="button" class="btn btn-primary btn-lg btn-block">Certification</button>
-                            </a>
+                            {groupeTwo.urlCertification === null ? null :  <a href={groupeTwo.urlCertification}><button color="info" type="button" className="btn btn-primary btn-lg btn-block">Certification</button></a> }
                             </MDBCardBody>
                         </MDBCard>
                         </MDBCol>
@@ -138,7 +145,7 @@ const Certification = () => {
             <MDBRow>
                 {groupeThree.map((groupeThree,i=0)=>{
                     return(
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-4">
+                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-4" key={groupeThree.id}>
                         <MDBCard>
                         <MDBCardImage
                                     cascade
@@ -149,7 +156,9 @@ const Certification = () => {
                                 />
                             <MDBCardBody>
                             <MDBCardTitle>
-                            <h5>{groupeThree.title}</h5>
+                            <MDBCol lg="12" md="12">
+                                <h5>{groupeThree.title}</h5>
+                            </MDBCol>
                             <strong>
                                 <a href='#!'>{groupeThree.Institute}</a>
                             </strong>
@@ -162,7 +171,7 @@ const Certification = () => {
                                     {groupeThree.expirationDate === null? 'Sin fecha de vencimiento': `vence el: ${groupeThree.expirationDate.toLocaleDateString()}`}
                                 </label>
                             </MDBCardText>
-                            {groupeThree.urlCertification === null ? null :  <a href={groupeThree.urlCertification}><button color="info" type="button" class="btn btn-primary btn-lg btn-block">Certification</button></a> }
+                            {groupeThree.urlCertification === null ? null :  <a href={groupeThree.urlCertification}><button color="info" type="button" className="btn btn-primary btn-lg btn-block">Certification</button></a> }
                             </MDBCardBody>
                         </MDBCard>
                         </MDBCol>

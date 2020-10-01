@@ -14,7 +14,7 @@ class Progress extends React.Component {
       {name:'.Net', value:55 },
       {name:'Asp.Net core', value:45 },
       {name:'Sql', value:65 },
-      {name:'Mongo', value:20 },
+      {name:'Mongo DB', value:20 },
       {name:'Html', value:95},
       {name:'Css', value:80 },
       {name:'Sass', value:85 },
@@ -51,6 +51,7 @@ class Progress extends React.Component {
       this.state.Tecnologys.sort(function (a, b){
         return (b.value - a.value)
         })
+        console.log(`%cEl lenguaje donde mas dominio poseo es ${this.state.Tecnologys[0].name} y en el que tengo mucho punto de mejora ${this.state.Tecnologys[this.state.Tecnologys.length - 1].name}`, 'color: orange;')
     }
     else
     {
