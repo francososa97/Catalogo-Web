@@ -42,8 +42,8 @@ const Certification = () => {
     ];
 
    var orderCertifications= certifications.sort(function (a, b) {
-        if(a.expeditionDate.getDay() < b.expeditionDate.getDay() || a.expeditionDate.getMonth() < b.expeditionDate.getMonth() && a.expeditionDate.getFullYear() < b.expeditionDate.getFullYear()) return -1;
-        if(a.expeditionDate.getDay() > b.expeditionDate.getDay() || a.expeditionDate.getMonth() > b.expeditionDate.getMonth() && a.expeditionDate.getFullYear() > b.expeditionDate.getFullYear()) return 1;
+        if((a.expeditionDate.getDay() < b.expeditionDate.getDay() || a.expeditionDate.getMonth() < b.expeditionDate.getMonth()) && a.expeditionDate.getFullYear() < b.expeditionDate.getFullYear()) return -1;
+        if((a.expeditionDate.getDay() > b.expeditionDate.getDay() || a.expeditionDate.getMonth() > b.expeditionDate.getMonth()) && a.expeditionDate.getFullYear() > b.expeditionDate.getFullYear()) return 1;
 
         return 0;
     });
