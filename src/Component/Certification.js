@@ -10,6 +10,7 @@ import javaScript from '../Images/js.png';
 import sjt1 from '../Images/sjt1.jpeg';
 import sjt2 from '../Images/sjt2.jpeg';
 import utn from '../Images/Utn.jpeg';
+import certoprof from'../Images/certoprof.jpg';
 import {
   MDBRow,
   MDBCol,
@@ -39,6 +40,7 @@ const Certification = () => {
         {'title': 'Holograma','Institute': 'Instituto Tecnico Industrial "San Judas Tadeo','urlCertification':null,'expeditionDate': new Date("2016,12,07"),'expirationDate':null,'technologyImage': sjt1,'id':10},
         {'title': 'Bachiller en bienes y servicios','Institute': 'Instituto Tecnico Industrial "San Judas Tadeo','urlCertification':null,'expeditionDate':  new Date("2016,12,07"),'expirationDate':null,'technologyImage': sjt2,'id':11},
         {'title': 'Diseño web','Institute': 'Universidad Tecnológica Nacional','urlCertification':null,'expeditionDate':  new Date("2017,08,01"),'expirationDate':null,'technologyImage': utn,'id':12},
+        {'title': 'Scrum Foundation Professional Certificate','Institute': "CertiProf",'urlCertification':"https://certificates.easy-lms.com/exam/session/75c6a0d3-8b04-4f90-8d16-76e0a8d2e67c",'expeditionDate':  new Date("2020,10,25"),'expirationDate':null,'technologyImage': certoprof,'id':13,}
     ];
 
    var orderCertifications= certifications.sort(function (a, b) {
@@ -52,16 +54,18 @@ const Certification = () => {
 
     let lastCertification = orderCertifications[orderCertifications.length - 1]
     console.log(`%c Mi ultima certificacion fue la de ${lastCertification.title}`, 'color: orange;')
+    let groupOne=orderCertifications.slice(0,4)
+    let groupeTwo=orderCertifications.slice(4,8)
+    let groupeThree=orderCertifications.slice(8,12)
+    let groupeFour=orderCertifications.slice(12,13)
+    console.log({groupOne,groupeTwo,groupeThree,groupeFour})
 
-    let groupOne=[{...orderCertifications[0]},{...orderCertifications[1]},{...orderCertifications[2]},{...orderCertifications[3]}]
-    let groupeTwo=[{...orderCertifications[4]},{...orderCertifications[5]},{...orderCertifications[6]},{...orderCertifications[7]}]
-    let groupeThree=[{...orderCertifications[8]},{...orderCertifications[9]},{...orderCertifications[10]},{...orderCertifications[11]}]
 
   return (
       <>
     <section className='text-center my-5'>
       <h2 className='h1-responsive font-weight-bold text-center my-5'>Mis certificaciones</h2>
-      <MDBCarousel activeItem={1} length={3} slide={true} showControls={true} showIndicators={true} multiItem className='pb-5'>
+      <MDBCarousel activeItem={1} length={4} slide={true} showControls={true} showIndicators={true} multiItem className='pb-5'>
         <MDBCarouselInner>
           <MDBRow>
             <MDBCarouselItem itemId='1'>
@@ -180,6 +184,46 @@ const Certification = () => {
 
             </MDBRow>
             </MDBCarouselItem>
+            <MDBCarouselItem itemId='4'>
+            <MDBRow>
+                {groupeFour.map(groupOne=>{
+                    return(
+                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-4" key={groupOne.id}>
+                        <MDBCard>
+                        <MDBCardImage
+                                    cascade
+                                    top
+                                    src={groupOne.technologyImage}
+                                    alt='sample photo'
+                                    height="200"
+                                />
+                            <MDBCardBody>
+                            <MDBCardTitle>
+                            <MDBCol lg="12" md="12">
+                                <h5>{groupOne.title}</h5>
+                            </MDBCol>
+                            <strong>
+                                <a href='#!'>{groupOne.Institute}</a>
+                            </strong>
+                            </MDBCardTitle>
+                            <MDBCardText> 
+                                <label className='float-left p-1'>
+                                    Obtenida el: {groupOne.expeditionDate.toLocaleDateString()}
+                                </label>
+                                <label className='float-right p-1'>
+                                    {groupOne.expirationDate === null? 'Sin fecha de vencimiento': `vence el: ${groupOne.expirationDate.toLocaleDateString()}`}
+                                </label>
+                            </MDBCardText>
+                            {groupOne.urlCertification === null ? null :  <a href={groupOne.urlCertification}><button color="info" type="button" className="btn btn-primary btn-lg btn-block">Certification</button></a> }
+                            </MDBCardBody>
+                        </MDBCard>
+                        </MDBCol>
+                    )
+                })}
+
+            </MDBRow>
+            </MDBCarouselItem>
+            
           </MDBRow>
         </MDBCarouselInner>
       </MDBCarousel>
