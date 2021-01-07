@@ -18,7 +18,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
               <Route exact path="/Catalogo" component={Catalogue} />
-              <Route exact path="/Contacto" component={Contact} />
+              <Route exact path="/Experiencia" component={Contact} />
           </Switch>
           <Footer/>
         </Router>
@@ -26,5 +26,4 @@ function App() {
     </>
   );
 }
-
 export default App;
