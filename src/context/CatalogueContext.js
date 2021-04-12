@@ -6,6 +6,7 @@ import song from '../Images/canciones.PNG';
 import weather from '../Images/clima.PNG';
 import budget from '../Images/presupuesto.PNG';
 import coin from '../Images/coin.PNG';
+import CamelCase from '../Images/CamelCase.png';
 
 // Crear el Context
 export const CatalogueContext = createContext();
@@ -21,6 +22,13 @@ const CatalogueProvider = (props) => {
     useEffect(() => {
         const getCatalogue = async () => {
           const projects= [
+            {
+              title:"Transformador de palabras en CamelCase",
+              tecnologyBody:"Con la tecnología de hock y métodos propios de javascrpit pude filtrar los espacios del string ingresado y pasar a mayúscula el carácter siguiente al espacio en blanco.",
+              userBody:"El usuario podrá cargar palabras u oraciones y convertirlas a CamelCase.",
+              srcimg:CamelCase,
+              url:"https://camel-case.netlify.app/"
+            },
             {
               title:"Generador de turnos de veterinario",
               tecnologyBody:"Con ayuda del state de react y hooks con props se obtuvo esta aplicación web que guarda información de un formulario para registrar turnos de una veterinaria, si se actualiza o se cierra la página esto se guarda en cache y cuando vuelva a ingresar, se podrá acceder nuevamente a la información.",
