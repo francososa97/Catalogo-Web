@@ -61,11 +61,11 @@ class Navbar extends React.Component {
                   </li>
                   <li>
                   <NavLink 
-                       to='/Contacto'
+                       to='/Experiencia'
                          className="nav-link"
                         activeClassName="active"
                     >
-                      <p className="white-text">Contacto</p>
+                      <p className="white-text">Experiencia</p>
                     </NavLink>
                   </li>
                 </ul>

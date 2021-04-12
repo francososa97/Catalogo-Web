@@ -40,7 +40,8 @@ const Certification = () => {
         {'title': 'Holograma','Institute': 'Instituto Tecnico Industrial "San Judas Tadeo','urlCertification':null,'expeditionDate': new Date("2016,12,07"),'expirationDate':null,'technologyImage': sjt1,'id':10},
         {'title': 'Bachiller en bienes y servicios','Institute': 'Instituto Tecnico Industrial "San Judas Tadeo','urlCertification':null,'expeditionDate':  new Date("2016,12,07"),'expirationDate':null,'technologyImage': sjt2,'id':11},
         {'title': 'Diseño web','Institute': 'Universidad Tecnológica Nacional','urlCertification':null,'expeditionDate':  new Date("2017,08,01"),'expirationDate':null,'technologyImage': utn,'id':12},
-        {'title': 'Scrum Foundation Professional Certificate','Institute': "CertiProf",'urlCertification':"https://certificates.easy-lms.com/exam/session/75c6a0d3-8b04-4f90-8d16-76e0a8d2e67c",'expeditionDate':  new Date("2020,10,25"),'expirationDate':null,'technologyImage': certoprof,'id':13,}
+        {'title': 'Scrum Foundation Professional Certificate','Institute': "CertiProf",'urlCertification':"https://certificates.easy-lms.com/exam/session/75c6a0d3-8b04-4f90-8d16-76e0a8d2e67c",'expeditionDate':  new Date("2020,10,25"),'expirationDate':null,'technologyImage': certoprof,'id':13,},
+        {'title': 'SQL Consultas en Micrsoft SQL server certificacion 70-61','Institute': "Udemy",'urlCertification':"https://udemy-certificate.s3.amazonaws.com/image/UC-f7def525-ebe5-4beb-b29c-8e882c2c2c77.jpg",'expeditionDate':  new Date("2021,01,22"),'expirationDate':null,'technologyImage': SqlBlog,'id':14,}
     ];
 
    var orderCertifications= certifications.sort(function (a, b) {
@@ -57,7 +58,7 @@ const Certification = () => {
     let groupOne=orderCertifications.slice(0,4)
     let groupeTwo=orderCertifications.slice(4,8)
     let groupeThree=orderCertifications.slice(8,12)
-    let groupeFour=orderCertifications.slice(12,13)
+    let groupeFour=orderCertifications.slice(12,14)
     console.log({groupOne,groupeTwo,groupeThree,groupeFour})
 
 

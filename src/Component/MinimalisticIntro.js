@@ -53,11 +53,11 @@ class MinimalisticIntro extends React.Component {
                 </MDBBtn>
                 <MDBBtn outline color='black'>
                 <NavLink 
-                      to='/Contacto'
+                      to='/Experiencia'
                       className="nav-link"
                     activeClassName="active"
                 >
-                   <p className="black-text">Contacto</p> 
+                   <p className="black-text">Experiencia</p> 
                   </NavLink>
                 </MDBBtn>
               </MDBCol>

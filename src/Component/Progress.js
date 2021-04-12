@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBProgress, MDBContainer,MDBCollapse,MDBIcon,MDBBtn} from 'mdbreact';
+import { MDBProgress, MDBContainer,MDBBtn} from 'mdbreact';
 
 class Progress extends React.Component {
   constructor(props) {
@@ -11,9 +11,9 @@ class Progress extends React.Component {
       collapseID: '',
       stateOrder: true,
       Tecnologys: [{name:'React', value:95 },
-      {name:'.Net', value:55 },
-      {name:'Asp.Net core', value:45 },
-      {name:'Sql', value:65 },
+      {name:'.Net', value:70 },
+      {name:'Asp.Net core', value:60 },
+      {name:'Sql', value:75 },
       {name:'Mongo DB', value:20 },
       {name:'Html', value:95},
       {name:'Css', value:80 },
@@ -22,8 +22,8 @@ class Progress extends React.Component {
       {name:'JavaScript', value:85 },
       {name:'jquery', value:90 },
       {name:'Vue.js', value:35},
-      {name:'React Native', value:75},
-      {name:'Node', value:40 },
+      {name:'React Native', value:80},
+      {name:'Node', value:50 },
       {name:'Boostrap', value:70 },],
     };
     this.onClick = this.onClick.bind(this);
@@ -69,9 +69,7 @@ class Progress extends React.Component {
     <MDBContainer className="mt-5 mb-4 text-center text-md-left">
           <h2 className="h1-responsive font-weight-bold text-center my-5" onClick={()=> this.toggleSingleCollapse('collapseProgress')}>
             Conocimiento tecnico
-            {this.state.collapseProgress ? <MDBIcon icon="angle-double-up" className="ml-3"/> : <MDBIcon icon="angle-double-down" className="ml-3"/>}
           </h2>
-      <MDBCollapse isOpen={this.state.collapseProgress}>
       <MDBBtn color="info" onClick={()=> this.Order()}>Ordenar {this.state.stateOrder? "descendentemente" : "ascendentemente"} </MDBBtn>
       {this.state.Tecnologys.map(Tecnology=>{
           return (
@@ -85,7 +83,6 @@ class Progress extends React.Component {
             </>
           );
         })}
-      </MDBCollapse>
     </MDBContainer>
     </>
      );
