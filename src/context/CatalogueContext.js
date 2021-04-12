@@ -75,7 +75,7 @@ const CatalogueProvider = (props) => {
         }
         getCatalogue();
     }, []);
-
+    console.log(Catalogue);
     return (
         <CatalogueContext.Provider
             value={Catalogue}

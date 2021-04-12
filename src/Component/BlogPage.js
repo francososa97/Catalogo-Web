@@ -6,7 +6,8 @@ import { CatalogueContext } from '../context/CatalogueContext';
 const BlogPage = () => {
 
   const projects  = useContext(CatalogueContext);
-
+  console.log(projects);
+  
   return (
     <MDBCard className="mt-5 px-5 pb-5">
       <MDBCardBody>

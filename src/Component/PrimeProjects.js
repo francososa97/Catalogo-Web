@@ -3,6 +3,7 @@ import {  MDBCollapse,MDBRow, MDBCol, MDBCard, MDBIcon, MDBBtn } from "mdbreact"
 import recetas from '../Images/recetas.jpg'
 import bitcoin from '../Images/bitcoin.jpg'
 import cafe from '../Images/cafe.jpg'
+import pokedex from '../Images/fondo-prueba3.jpg';
 
 class PrimeProjects extends React.Component {
   constructor(props) {
@@ -41,8 +42,91 @@ class PrimeProjects extends React.Component {
         </h2>
         <MDBCollapse  isOpen={this.state.collapseProjects}>
         <MDBRow>
+        <MDBCol md='12' className='mb-4'>
+            <MDBCard className="card-pokedex" style={{backgroundImage:`url(${pokedex})`}}>
+              
+              <div 
+                style={{
+                    backgroundImage:
+                    {pokedex}
+                  }} 
+                className='text-white text-center d-flex flex-column align-items-center rgba-black-strong py-5 px-4 rounded'>
+                <h6 className="deep-orange-text" >
+                  <MDBIcon far icon="file-alt" />
+                  <strong> CRUD</strong>
+                </h6>
+                <h3 className='py-3 font-weight-bold'>
+                  <strong>
+                  Pokedex
+                  </strong>
+                </h3>
+                <p className='pb-3'>
+                  En este proyecto, se obtienen todos los pokemones de la región de kanto, en el cual se puede pueden visualizar todos los resultados en una tabla inteligente donde podemos modificar la cantidad de resultados que queremos ver, además vamos a poder obtener todos los detalles de cada Pokémon y modificarle los valores de su peso y altura.
+                </p>
+                <a href="https://poke-pokedex-spa.netlify.app/">
+                  <MDBBtn color='orange' rounded size='md'>
+                      <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
+                  </MDBBtn>
+                </a>
+              </div>
+            </MDBCard>
+          </MDBCol>
+
+          <MDBCol md='6' className='md-0 mb-4'>
+          <MDBCard className="card-cripto" style={{backgroundImage:`url(${bitcoin})`}}>
+              <div className='text-white text-center align-items-center rgba-black-strong py-5 px-4 rounded'  style={{padding: 30}} >
+                  <h6 className='pink-text'>
+                    <MDBIcon icon='coins' />
+                    <strong> Cotizador</strong>
+                  </h6>
+                  <h3 className='py-3 font-weight-bold'>
+                    <strong>Criptomonedas al instante</strong>
+                  </h3>
+                  <p className='pb-3'>
+                    Gracias a esta aplicación vamos a poder consultar la cotización de diferentes criptomonedas en el instante, 
+                    además de esto al momento de darnos la cotización también nos dará el precio más alto del día y el más bajo también y 
+                    cuando fue la última actualización de la cotización.
+                  </p>
+                  <a href="https://cotizador-bitcoin-monedas.netlify.app/">
+                  <MDBBtn color='pink' rounded size='md'>
+                      <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
+                  </MDBBtn>
+                </a>
+              </div>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md='6' className='md-0 mb-4'>
+            <MDBCard
+              className='card-restaurante'
+              style={{backgroundImage:`url(${cafe})`}}
+            >
+              <div 
+                  className='text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded'>
+                <div>
+                  <h6 className='green-text'>
+                    <MDBIcon icon='utensils' />
+                    <strong> Restaurante</strong>
+                  </h6>
+                  <h3 className='py-3 font-weight-bold'>
+                    <strong>Restaurante crud</strong>
+                  </h3>
+                  <p className='pb-3'>
+                    En esta aplicación web vamos a poder realizar todas las funciones de un CRUD (Crear, Leer, Actualizar y Borrar) tradicional. 
+                    En el mismo vamos a gestionar productos o platos de un restaurante. Además, como valor agregado, 
+                    la aplicación cuenta con ciertas validaciones para generar productos o platos y actualiza el stock en el instante.
+                  </p>
+                  <a href="https://restaurant-descargarjson.netlify.app/">
+                  <MDBBtn color='success' rounded size='md'>
+                      <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
+                  </MDBBtn>
+                </a>
+                </div>
+              </div>
+            </MDBCard>
+          </MDBCol>
+          
           <MDBCol md='12' className='mb-4'>
-            <MDBCard style={{backgroundImage:`url(${recetas})`}}>
+            <MDBCard className="card-bebidas" style={{backgroundImage:`url(${recetas})`}}>
               <div 
                 style={{
                     backgroundImage:
@@ -70,58 +154,7 @@ class PrimeProjects extends React.Component {
               </div>
             </MDBCard>
           </MDBCol>
-          <MDBCol md='6' className='md-0 mb-4'>
-          <MDBCard style={{backgroundImage:`url(${bitcoin})`}}>
-              <div className='text-white text-center align-items-center rgba-black-strong py-5 px-4 rounded'  style={{padding: 30}} >
-                  <h6 className='pink-text'>
-                    <MDBIcon icon='coins' />
-                    <strong> Cotizador</strong>
-                  </h6>
-                  <h3 className='py-3 font-weight-bold'>
-                    <strong>Criptomonedas al instante</strong>
-                  </h3>
-                  <p className='pb-3'>
-                    Gracias a esta aplicación vamos a poder consultar la cotización de diferentes criptomonedas en el instante, 
-                    además de esto al momento de darnos la cotización también nos dará el precio más alto del día y el más bajo también y 
-                    cuando fue la última actualización de la cotización.
-                  </p>
-                  <a href="https://cotizador-bitcoin-monedas.netlify.app/">
-                  <MDBBtn color='pink' rounded size='md'>
-                      <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
-                  </MDBBtn>
-                </a>
-              </div>
-            </MDBCard>
-          </MDBCol>
-          <MDBCol md='6' className='md-0 mb-4'>
-            <MDBCard
-              className='card-image'
-              style={{backgroundImage:`url(${cafe})`}}
-            >
-              <div 
-                  className='text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded'>
-                <div>
-                  <h6 className='green-text'>
-                    <MDBIcon icon='utensils' />
-                    <strong> Restaurante</strong>
-                  </h6>
-                  <h3 className='py-3 font-weight-bold'>
-                    <strong>Restaurante crud</strong>
-                  </h3>
-                  <p className='pb-3'>
-                    En esta aplicación web vamos a poder realizar todas las funciones de un CRUD (Crear, Leer, Actualizar y Borrar) tradicional. 
-                    En el mismo vamos a gestionar productos o platos de un restaurante. Además, como valor agregado, 
-                    la aplicación cuenta con ciertas validaciones para generar productos o platos y actualiza el stock en el instante.
-                  </p>
-                  <a href="https://restaurant-descargarjson.netlify.app/">
-                  <MDBBtn color='success' rounded size='md'>
-                      <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
-                  </MDBBtn>
-                </a>
-                </div>
-              </div>
-            </MDBCard>
-          </MDBCol>
+
         </MDBRow>
         </MDBCollapse>
       </section>
@@ -130,3 +163,13 @@ class PrimeProjects extends React.Component {
 }
 
 export default PrimeProjects;
+
+
+/*
+    background-color: #cccccc;
+    height: 352px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+*/

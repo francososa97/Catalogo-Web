@@ -9,6 +9,30 @@
   height: 40vmin;
   pointer-events: none;
 }
+.card-pokedex{
+  height: 326px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-restaurante{
+  height: 352px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-bebidas{
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-cripto{
+  height: 352px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
