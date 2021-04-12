@@ -6,7 +6,7 @@ import song from '../Images/canciones.PNG';
 import weather from '../Images/clima.PNG';
 import budget from '../Images/presupuesto.PNG';
 import coin from '../Images/coin.PNG';
-import CamelCase from '../Images/CamelCase.png';
+import CamelCase from '../Images/CamelCase.PNG';
 
 // Crear el Context
 export const CatalogueContext = createContext();
