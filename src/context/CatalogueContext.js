@@ -7,6 +7,8 @@ import weather from '../Images/clima.PNG';
 import budget from '../Images/presupuesto.PNG';
 import coin from '../Images/coin.PNG';
 import CamelCase from '../Images/CamelCase.PNG';
+import ListadoCustomer from '../Images/ListadoCustomer.PNG';
+import Reservas from '../Images/Reservas.PNG';
 
 // Crear el Context
 export const CatalogueContext = createContext();
@@ -22,6 +24,20 @@ const CatalogueProvider = (props) => {
     useEffect(() => {
         const getCatalogue = async () => {
           const projects= [
+            {
+              title:"Buscador de clientes",
+              tecnologyBody:"Podemos realizar búsquedas por de clientes utilizando algoritmos de búsqueda y podemos agrupar filtros de búsqueda para encontrar el cliente buscado",
+              userBody:"En esta aplicación se puede utilizar un buscador avanzado en el cual podemos realizar búsquedas generales de clientes, o podemos buscar por tipo de información sea nombre, direccion,email. tambien podemos filtrar por clientes chequeados.",              srcimg:ListadoCustomer,
+              url:"https://find-customer.netlify.app/",
+              srcimg:ListadoCustomer,
+            },
+            {
+              title:"Reserva de envios.",
+              tecnologyBody:"Dentro de la aplicación creamos los horarios a cada 30 minutos y después utilizando vectores de tipo pila vamos agotando las reservas.",
+              userBody:"Podemos gestionar reservas en distintos horarios y tenemos la opción de cancelar o dar de alta una reserva.",
+              srcimg:Reservas,
+              url:"https://gestion-reserva.netlify.app/"
+            },
             {
               title:"Transformador de palabras en CamelCase",
               tecnologyBody:"Con la tecnología de hock y métodos propios de javascrpit pude filtrar los espacios del string ingresado y pasar a mayúscula el carácter siguiente al espacio en blanco.",
