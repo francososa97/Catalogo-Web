@@ -27,7 +27,7 @@ const CatalogueProvider = (props) => {
             {
               title:"Buscador de clientes",
               tecnologyBody:"Podemos realizar búsquedas por de clientes utilizando algoritmos de búsqueda y podemos agrupar filtros de búsqueda para encontrar el cliente buscado",
-              userBody:"En esta aplicación se puede utilizar un buscador avanzado en el cual podemos realizar búsquedas generales de clientes, o podemos buscar por tipo de información sea nombre, direccion,email. tambien podemos filtrar por clientes chequeados.",              srcimg:ListadoCustomer,
+              userBody:"En esta aplicación se puede utilizar un buscador avanzado en el cual podemos realizar búsquedas generales de clientes, o podemos buscar por tipo de información sea nombre, direccion,email. tambien podemos filtrar por clientes chequeados.",
               url:"https://find-customer.netlify.app/",
               urlGit:"https://github.com/francososa97/Find-Customer",
               srcimg:ListadoCustomer,
