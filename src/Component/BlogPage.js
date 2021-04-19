@@ -1,7 +1,10 @@
 
 import React, { useContext } from 'react';
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn,MDBContainer,MDBBadge} from "mdbreact";
 import { CatalogueContext } from '../context/CatalogueContext';
+
+import git from '../Images/iconfinder_github_3.png';
+
 
 const BlogPage = () => {
 
@@ -55,10 +58,16 @@ const BlogPage = () => {
                       </MDBCol>
                     </MDBRow>
                     <a href={project.url}>
-                      <MDBBtn color='info' rounded size='md'>
+                      <MDBBtn color="elegant" rounded size='md'>
                         <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
                     </MDBBtn>
                     </a>
+                    {
+                      project.urlGit.length > 0
+                        ? <a href={project.urlGit}><img src={git} className="icon-git"/></a>
+                        : null
+                    }
+                    
                   </MDBCol>
                 </MDBRow>
                   <hr className="my-5" />

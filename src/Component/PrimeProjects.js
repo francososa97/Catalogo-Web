@@ -4,6 +4,7 @@ import recetas from '../Images/recetas.jpg'
 import bitcoin from '../Images/bitcoin.jpg'
 import cafe from '../Images/cafe.jpg'
 import pokedex from '../Images/fondo-prueba3.jpg';
+import git from '../Images/iconfinder_github_3.png';
 
 class PrimeProjects extends React.Component {
   constructor(props) {
@@ -68,6 +69,11 @@ class PrimeProjects extends React.Component {
                       <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
                   </MDBBtn>
                 </a>
+                <a href="https://github.com/francososa97/Spa-Pokedex">
+                  <img src={git} className="icon-git"/>
+                </a>
+
+                
               </div>
             </MDBCard>
           </MDBCol>
@@ -91,6 +97,9 @@ class PrimeProjects extends React.Component {
                   <MDBBtn color='pink' rounded size='md'>
                       <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
                   </MDBBtn>
+                </a>
+                <a href="https://github.com/francososa97/bitcoin-sitio">
+                  <img src={git} className="icon-git"/>
                 </a>
               </div>
             </MDBCard>
@@ -119,6 +128,9 @@ class PrimeProjects extends React.Component {
                   <MDBBtn color='success' rounded size='md'>
                       <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
                   </MDBBtn>
+                </a>
+                <a href="https://github.com/francososa97/restaurant-api-react">
+                  <img src={git} className="icon-git"/>
                 </a>
                 </div>
               </div>
@@ -151,6 +163,9 @@ class PrimeProjects extends React.Component {
                       <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
                   </MDBBtn>
                 </a>
+                <a href="https://github.com/francososa97/Recetas-Tragos">
+                  <img src={git} className="icon-git"/>
+                </a>
               </div>
             </MDBCard>
           </MDBCol>
@@ -163,13 +178,3 @@ class PrimeProjects extends React.Component {
 }
 
 export default PrimeProjects;
-
-
-/*
-    background-color: #cccccc;
-    height: 352px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-*/

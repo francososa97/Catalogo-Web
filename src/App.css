@@ -9,6 +9,13 @@
   height: 40vmin;
   pointer-events: none;
 }
+.color-black{
+  color: #000;
+}
+.icon-git{
+  width:40px;
+  height:40px;
+}
 .card-pokedex{
   height: 326px;
   background-position: center;
