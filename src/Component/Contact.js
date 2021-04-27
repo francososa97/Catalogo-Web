@@ -12,7 +12,7 @@ const Contact  = () => {
     const [notificacion,SetNotificacion]=useState({"exito":false,"titulo":"","cuerpo":"","mostrar":false});
 
     const CraerConsulta = () =>{
-        if(email.length !== 0 && mensaje !== 0)
+        if(email.length !== 0 && mensaje.length !== 0)
         {
           let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
           if(emailRegex.test(email))
