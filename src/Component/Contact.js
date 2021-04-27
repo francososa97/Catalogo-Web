@@ -12,7 +12,6 @@ const Contact  = () => {
     const [notificacion,SetNotificacion]=useState({"exito":false,"titulo":"","cuerpo":"","mostrar":false});
 
     const CraerConsulta = () =>{
-        
         if(email.length !== 0 && mensaje !== 0)
         {
           let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -29,9 +28,15 @@ const Contact  = () => {
                     dataBaseConsultas.push(snapChild.data());
                 });
                 dataBaseConsultas.forEach(consulta =>{
-                  if(nuevaConsulta.nombre === consulta.nombre && nuevaConsulta.email === consulta.email && nuevaConsulta.asunto===consulta.asunto && nuevaConsulta.mensaje === consulta.mensaje ){
+
+                  if(nuevaConsulta.nombre === consulta.nombre && nuevaConsulta.email === consulta.email && nuevaConsulta.asunto===consulta.asunto && nuevaConsulta.mensaje === consulta.mensaje )
+                  {
                     let notificacionExito ={"exito":true,"titulo":"Su consulta fue enviada exitosamente.","cuerpo":"Me estare comunicando a la brevedad.","mostrar":true}
                     SetNotificacion(notificacionExito);
+                    SetNombre((state)=> "");
+                    SetMensaje((state)=> "");
+                    SetAsunto((state)=> "");
+                    SetEmail((state)=> "");
                   }
                 })
             });
@@ -64,6 +69,7 @@ const Contact  = () => {
                         type="text" 
                         id="contact-name" 
                         label="Tu nombre (opcional)" 
+                        value={nombre}
                         onChange={(e) => SetNombre(e.target.value)} 
                     />
                   </div>
@@ -74,6 +80,7 @@ const Contact  = () => {
                       type="text"
                       id="contact-email"
                       label="Tu mail"
+                      value={email}
                       onChange={(e) => SetEmail(e.target.value)}
                     />
                   </div>
@@ -86,6 +93,7 @@ const Contact  = () => {
                         type="text" 
                         id="contact-subject" 
                         label="Asunto (opcional)" 
+                        value={asunto}
                         onChange={(e) => SetAsunto(e.target.value)}
                     />
                   </div>
@@ -98,6 +106,7 @@ const Contact  = () => {
                       type="textarea"
                       id="contact-message"
                       label="Tu mensaje"
+                      value={mensaje}
                       onChange={(e) => SetMensaje(e.target.value)}
                     />
                   </div>
