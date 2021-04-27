@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBProgress, MDBContainer,MDBBtn} from 'mdbreact';
+import { MDBProgress, MDBContainer,MDBBtn,MDBIcon,MDBCollapse} from 'mdbreact';
 
 class Progress extends React.Component {
   constructor(props) {
@@ -69,20 +69,23 @@ class Progress extends React.Component {
     <MDBContainer className="mt-5 mb-4 text-center text-md-left">
           <h2 className="h1-responsive font-weight-bold text-center my-5" onClick={()=> this.toggleSingleCollapse('collapseProgress')}>
             Conocimiento tecnico
+            {this.state.collapseProgress ? <MDBIcon icon="angle-double-up" className="ml-3"/> : <MDBIcon icon="angle-double-down" className="ml-3"/>}
           </h2>
-      <MDBBtn color="info" onClick={()=> this.Order()}>Ordenar {this.state.stateOrder? "descendentemente" : "ascendentemente"} </MDBBtn>
-      {this.state.Tecnologys.map(Tecnology=>{
-          return (
-            <>
-              <p className="font-weight-bold mt-4">
-              {Tecnology.name}
-              </p>
-              <MDBProgress key={Tecnology.name} material value={Tecnology.value} height="20px">
-                {Tecnology.value + "%"}
-              </MDBProgress>
-            </>
-          );
-        })}
+          <MDBCollapse isOpen={this.state.collapseProgress}>
+            <MDBBtn color="info" onClick={()=> this.Order()}>Ordenar {this.state.stateOrder? "descendentemente" : "ascendentemente"} </MDBBtn>
+            {this.state.Tecnologys.map(Tecnology=>{
+                return (
+                  <>
+                    <p className="font-weight-bold mt-4">
+                    {Tecnology.name}
+                    </p>
+                    <MDBProgress key={Tecnology.name} material value={Tecnology.value} height="20px">
+                      {Tecnology.value + "%"}
+                    </MDBProgress>
+                  </>
+                );
+              })}
+        </MDBCollapse>
     </MDBContainer>
     </>
      );

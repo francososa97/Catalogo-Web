@@ -14,11 +14,11 @@ const FooterPagePro = () => {
               </h6>
             </MDBCol>
             <MDBCol md="6" lg="7" className="text-center text-md-right">
-              <a className="li-ic" href="https://www.linkedin.com/in/franco-sosa-ab8032140/">
+              <a className="li-ic icon-footer-linkedin" href="https://www.linkedin.com/in/franco-sosa-ab8032140/">
                 <i className="fab fa-linkedin-in white-text mr-lg-4"> </i>
               </a>
-              <a href="https://github.com/francososa97">
-              <MDBIcon fab icon="github"/>
+              <a className="icon-footer-git" href="https://github.com/francososa97">
+                <MDBIcon fab icon="github"/>
                 </a>
             </MDBCol>
           </MDBRow>

@@ -2,14 +2,12 @@
 import React, { useContext } from 'react';
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn} from "mdbreact";
 import { CatalogueContext } from '../context/CatalogueContext';
-
 import git from '../Images/iconfinder_github_3.png';
 
 
 const BlogPage = () => {
 
   const projects  = useContext(CatalogueContext);
-  console.log(projects);
   
   return (
     <MDBCard className="mt-5 px-5 pb-5">

@@ -35,11 +35,11 @@ class MinimalisticIntro extends React.Component {
           >
             <MDBRow>
               <MDBCol md='12' className='mb-4 black-text text-center'>
-                <h1 className='display-3 mb-0 pt-md-5 pt-5 black-text font-weight-bold'>
+                <h1 className='display-3 mb-0 pt-md-5 pt-5 black-text font-weight-bold text-layout'>
                   Franco Sosa
                 </h1>
-                <hr className='hr-light my-4' />
-                <h5 className='text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 black-text font-weight-bold'>
+                <hr className='hr-dark my-4' />
+                <h5 className='pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 black-text font-weight-bold text-layout'>
                   Ssr full stack developer
                 </h5>
                 <MDBBtn outline color='black' >
@@ -48,16 +48,16 @@ class MinimalisticIntro extends React.Component {
                         className="nav-link"
                         activeClassName="active"
                 >
-                   <p className="black-text">Catalogo</p> 
+                   <p className="black-text text-layout">Catalogo</p> 
                   </NavLink>
                 </MDBBtn>
                 <MDBBtn outline color='black'>
                 <NavLink 
-                      to='/Experiencia'
+                      to='/contacto'
                       className="nav-link"
                     activeClassName="active"
                 >
-                   <p className="black-text">Experiencia</p> 
+                   <p className="black-text text-layout">Contacto</p> 
                   </NavLink>
                 </MDBBtn>
               </MDBCol>

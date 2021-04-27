@@ -70,7 +70,7 @@ class PrimeProjects extends React.Component {
                   </MDBBtn>
                 </a>
                 <a href="https://github.com/francososa97/Spa-Pokedex">
-                  <img src={git} alt="" className="icon-git"/>
+                  <img src={git} alt="" className="icon-pokedex icon-git"/>
                 </a>
 
                 
@@ -99,7 +99,7 @@ class PrimeProjects extends React.Component {
                   </MDBBtn>
                 </a>
                 <a href="https://github.com/francososa97/bitcoin-sitio">
-                  <img src={git}  alt="" className="icon-git"/>
+                  <img src={git}  alt="" className="icon-cripto icon-git"/>
                 </a>
               </div>
             </MDBCard>
@@ -130,7 +130,7 @@ class PrimeProjects extends React.Component {
                   </MDBBtn>
                 </a>
                 <a href="https://github.com/francososa97/restaurant-api-react">
-                  <img src={git} alt="" className="icon-git"/>
+                  <img src={git} alt="" className="icon-restaurante icon-git"/>
                 </a>
                 </div>
               </div>
@@ -164,7 +164,7 @@ class PrimeProjects extends React.Component {
                   </MDBBtn>
                 </a>
                 <a href="https://github.com/francososa97/Recetas-Tragos">
-                  <img src={git} alt="" className="icon-git"/>
+                  <img src={git} alt="" className="icon-bebidas icon-git"/>
                 </a>
               </div>
             </MDBCard>
