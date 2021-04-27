@@ -60,11 +60,9 @@ const BlogPage = () => {
                         <MDBIcon far icon='clone' className='left' /> Visitar la aplicacion
                     </MDBBtn>
                     </a>
-                    {
-                      project.urlGit.length > 0
+                    {project.urlGit.length > 0
                         ? <a href={project.urlGit}><img src={git} alt="" className="icon-git"/></a>
-                        : null
-                    }
+                        : null}
                     
                   </MDBCol>
                 </MDBRow>

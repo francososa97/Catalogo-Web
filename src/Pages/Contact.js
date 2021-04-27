@@ -1,10 +1,9 @@
 import React from 'react';
 import Progress from '../Component/Progress';
-import { MDBRow, MDBCol, MDBContainer,MDBCollapse, MDBInput,MDBIcon, MDBBtn} from "mdbreact";
-import Notificacion from "../Component/Notificacion";
-import Contacto from "../Component/Contacto.js";
+import {MDBContainer,MDBCollapse, MDBIcon} from "mdbreact";
+import Contact from "../Component/Contact.js";
 
-class Contact extends React.Component {
+class ContactPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,11 +41,11 @@ class Contact extends React.Component {
             {this.state.collapseContact  ? <MDBIcon icon="angle-double-up" className="ml-3"/> : <MDBIcon icon="angle-double-down" className="ml-3"/>}
           </h2>
           <MDBCollapse isOpen={this.state.collapseContact}>
-            <Contacto/>
+            <Contact/>
           </MDBCollapse>
         </MDBContainer>
       </>
     );
   }
 };
-export default Contact;
+export default ContactPage;

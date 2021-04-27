@@ -2,7 +2,7 @@ import React from 'react';
 import PrimeProjects from '../Component/PrimeProjects';
 import BlogPage  from '../Component/BlogPage';
 
-const Catalogo = () => {
+const Catalogue = () => {
 
     return(
         <>
@@ -12,4 +12,4 @@ const Catalogo = () => {
     );
 
 };
-export default Catalogo;
+export default Catalogue;

@@ -1,12 +1,12 @@
-import React,{useState} from 'react';
-import iconExito from '../Images/Icons/check.png';
-import iconCancelar from '../Images/Icons/cancelar.png';
+import React from 'react';
+import iconExit from '../Images/Icons/check.png';
+import iconCancel from '../Images/Icons/cancelar.png';
 
-const Notificacion = (props) => {
+const Notification = (props) => {
 
     const {cuerpo,exito,titulo} = props;
     const esExtio = exito? "bd-callout bd-callout-succes": "bd-callout bd-callout-error";
-    const iconoActual =  exito? iconExito: iconCancelar;
+    const iconoActual =  exito? iconExit: iconCancel;
     return(
         <>
             <div className={esExtio}>
@@ -33,4 +33,4 @@ const Notificacion = (props) => {
 
     );
 }
-export default Notificacion;
+export default Notification;

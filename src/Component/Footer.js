@@ -1,9 +1,11 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter,MDBIcon } from "mdbreact";
-import imgProfile from '../Images/Perfil.png';
+import imgProfile from '../Images/Perfil.jpg';
 
 const FooterPagePro = () => {
+
   return (
+
     <MDBFooter color="blue-grey" className="page-footer font-small lighten-5 pt-0">
       <div style={{ backgroundColor: "#42a5f5" }}>
         <MDBContainer>
@@ -30,7 +32,7 @@ const FooterPagePro = () => {
           <img
                 tag="img"
                 src={imgProfile}
-                className="rounded-circle z-depth-1 img-fluid"
+                className="rounded-circle z-depth-1 img-fluid img-perfil"
                 alt="Sample avatar"
               />
               <h5 className="font-weight-bold mt-4 mb-3">Franco Damián González Sosa</h5>

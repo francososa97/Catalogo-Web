@@ -1,10 +1,9 @@
 import React,{useState} from 'react'
-import { MDBRow, MDBCol, MDBContainer,MDBCollapse, MDBInput,MDBIcon, MDBBtn} from "mdbreact";
-import Notificacion from "../Component/Notificacion";
+import { MDBRow, MDBCol,MDBInput,MDBIcon, MDBBtn} from "mdbreact";
+import Notificacion from "./Notification";
 import { db } from "../FireBase/FirebaseConfig";
-const Contacto  = () => {
 
-
+const Contact  = () => {
 
     const [nombre,SetNombre]=useState("");
     const [email,SetEmail]=useState("");
@@ -14,13 +13,14 @@ const Contacto  = () => {
 
     const CraerConsulta = () =>{
         
-        if(email.length != 0 && mensaje !=0)
+        if(email.length !== 0 && mensaje !== 0)
         {
-
           let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
           if(emailRegex.test(email))
           {
-            let nuevaConsulta={"nombre":nombre,"email":email,"asunto":asunto,"mensaje":mensaje}
+            let dateActualy= new Date();
+            let dateConsultation = `${dateActualy.getDate()}/${dateActualy.getMonth()+1}/${dateActualy.getFullYear()} ${dateActualy.getHours()}:${dateActualy.getUTCMinutes()}`;
+            let nuevaConsulta={"nombre":nombre,"email":email,"asunto":asunto,"mensaje":mensaje,"fecha":dateConsultation}
             db.collection("Consultas").add(nuevaConsulta);
             const consultasReferencias =db.collection("Consultas");
             consultasReferencias.onSnapshot((snap) => {
@@ -30,7 +30,6 @@ const Contacto  = () => {
                 });
                 dataBaseConsultas.forEach(consulta =>{
                   if(nuevaConsulta.nombre === consulta.nombre && nuevaConsulta.email === consulta.email && nuevaConsulta.asunto===consulta.asunto && nuevaConsulta.mensaje === consulta.mensaje ){
-                    debugger;
                     let notificacionExito ={"exito":true,"titulo":"Su consulta fue enviada exitosamente.","cuerpo":"Me estare comunicando a la brevedad.","mostrar":true}
                     SetNotificacion(notificacionExito);
                   }
@@ -143,4 +142,4 @@ const Contacto  = () => {
         </>
     );
 }
-export default Contacto
+export default Contact
