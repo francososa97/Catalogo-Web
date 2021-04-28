@@ -3,11 +3,71 @@ import React, { useContext } from 'react';
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn} from "mdbreact";
 import { CatalogueContext } from '../context/CatalogueContext';
 import git from '../Images/iconfinder_github_3.png';
-
+import store from '../Images/store.PNG';
+import veterinarian from '../Images/veterinario.PNG';
+import br from '../Images/br.PNG';
+import song from '../Images/canciones.PNG';
+import weather from '../Images/clima.PNG';
+import budget from '../Images/presupuesto.PNG';
+import coin from '../Images/coin.PNG';
+import CamelCase from '../Images/CamelCase.PNG';
+import ListadoCustomer from '../Images/ListadoCustomer.PNG';
+import Reservas from '../Images/Reservas.PNG';
+import reproductor from '../Images/reproductor.PNG';
 
 const BlogPage = () => {
 
   const projects  = useContext(CatalogueContext);
+
+
+  const SetImg = (titleProject)=>{
+
+    let imgProject;
+    
+    switch(titleProject)
+    {
+      case "Reproductor de playlist":
+        imgProject=reproductor;
+        break;
+      case "Buscador de clientes":
+        imgProject=ListadoCustomer;
+        break;
+      case "Transformador de palabras en CamelCase":
+        imgProject=CamelCase;
+        break;
+      case "Generador de turnos de veterinario":
+        imgProject=veterinarian;
+        break;
+      case "Presupuestador automático":
+        imgProject=budget;
+        break;
+      case "Clima react":
+        imgProject=weather;
+        break;
+      case "Store Front-end":
+        imgProject=store;
+        break;
+      case "Fraces populares":
+        imgProject=br;
+        break;
+      case "Buscador de letras de canciones":
+        imgProject=song;
+        break;
+      case "Reserva de envios.":
+        imgProject=Reservas;
+        break;
+      case "Found Image":
+        imgProject=coin;
+        break;
+        
+      default:
+        imgProject=coin;
+        break;
+    };
+
+    return imgProject;
+
+  }
   
   return (
     <MDBCard className="mt-5 px-5 pb-5">
@@ -21,7 +81,7 @@ const BlogPage = () => {
                     <MDBView hover className="rounded z-depth-1-half mb-lg-0 mb-4">
                       <img
                         className="img-fluid"
-                        src={project.srcimg}
+                        src={SetImg(project.title)}
                         alt=""
                       />
                       <a href={project.url}>
