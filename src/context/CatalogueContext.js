@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 import { db } from "../FireBase/FirebaseConfig";
-
+/*
 import store from '../Images/store.PNG';
 import veterinarian from '../Images/veterinario.PNG';
 import br from '../Images/br.PNG';
@@ -12,7 +12,7 @@ import CamelCase from '../Images/CamelCase.PNG';
 import ListadoCustomer from '../Images/ListadoCustomer.PNG';
 import Reservas from '../Images/Reservas.PNG';
 import reproductor from '../Images/reproductor.PNG';
-
+*/
 export const CatalogueContext = createContext();
 
 const CatalogueProvider = (props) => {

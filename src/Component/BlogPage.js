@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn} from "mdbreact";
 import { CatalogueContext } from '../context/CatalogueContext';
 import git from '../Images/iconfinder_github_3.png';
+/*
 import store from '../Images/store.PNG';
 import veterinarian from '../Images/veterinario.PNG';
 import br from '../Images/br.PNG';
@@ -14,6 +15,7 @@ import CamelCase from '../Images/CamelCase.PNG';
 import ListadoCustomer from '../Images/ListadoCustomer.PNG';
 import Reservas from '../Images/Reservas.PNG';
 import reproductor from '../Images/reproductor.PNG';
+*/
 
 
 const BlogPage = () => {
