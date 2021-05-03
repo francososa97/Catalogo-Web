@@ -14,6 +14,7 @@ import CamelCase from '../Images/CamelCase.PNG';
 import ListadoCustomer from '../Images/ListadoCustomer.PNG';
 import Reservas from '../Images/Reservas.PNG';
 import reproductor from '../Images/reproductor.PNG';
+import Triviador from "../Images/Triviador.PNG";
 
 const BlogPage = () => {
 
@@ -59,7 +60,9 @@ const BlogPage = () => {
       case "Found Image":
         imgProject=coin;
         break;
-        
+      case "Triviador":
+        imgProject=Triviador;
+        break;
       default:
         imgProject=coin;
         break;
@@ -74,6 +77,7 @@ const BlogPage = () => {
       <MDBCardBody>
           {
             projects.map(project=>{
+              console.log(project)
               return(
                 <>
                 <MDBRow>

@@ -59,6 +59,14 @@ const Contact  = () => {
         <p className="text-center w-responsive mx-auto pb-5">
           Deja aquí tu consulta o su feedback!
         </p>
+        {notificacion.mostrar
+            ?
+            <Notificacion 
+                exito={notificacion.exito}
+                titulo={notificacion.titulo}
+                cuerpo={notificacion.cuerpo}
+            />
+        :null}
         <MDBRow>
           <MDBCol md="9" className="md-0 mb-5">
             <form>
@@ -140,14 +148,7 @@ const Contact  = () => {
             </ul>
           </MDBCol>
         </MDBRow>
-        {notificacion.mostrar
-            ?
-            <Notificacion 
-                exito={notificacion.exito}
-                titulo={notificacion.titulo}
-                cuerpo={notificacion.cuerpo}
-            />
-        :null}
+
         </>
     );
 }
