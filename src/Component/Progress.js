@@ -11,20 +11,20 @@ class Progress extends React.Component {
       collapseID: '',
       stateOrder: true,
       Tecnologys: [{name:'React', value:95 },
-      {name:'.Net', value:70 },
-      {name:'Asp.Net core', value:60 },
-      {name:'Sql', value:75 },
-      {name:'Mongo DB', value:20 },
+      {name:'.Net', value:95 },
+      {name:'Relation Data bases', value:85 },
+      {name:'No Relation Data bases', value:80 },
       {name:'Html', value:95},
-      {name:'Css', value:80 },
+      {name:'Css', value:90 },
       {name:'Sass', value:85 },
-      {name:'Responsive', value:90 },
-      {name:'JavaScript', value:85 },
+      {name:'JavaScript', value:90 },
       {name:'jquery', value:90 },
+      {name:'Angular', value:55},
       {name:'Vue.js', value:35},
       {name:'React Native', value:80},
-      {name:'Node', value:50 },
-      {name:'Boostrap', value:70 },],
+      {name:'Node', value:80 },
+      {name:'Boostrap', value:100 },
+    ],
     };
     this.onClick = this.onClick.bind(this);
     this.Order = this.Order.bind(this);
@@ -91,5 +91,4 @@ class Progress extends React.Component {
      );
     }
 }
-  
 export default Progress;

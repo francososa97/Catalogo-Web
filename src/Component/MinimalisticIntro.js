@@ -40,7 +40,7 @@ class MinimalisticIntro extends React.Component {
                 </h1>
                 <hr className='hr-dark my-4' />
                 <h5 className='pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 black-text font-weight-bold text-layout'>
-                  Ssr full stack developer
+                  Sr full stack developer
                 </h5>
                 <MDBBtn outline color='black' >
                 <NavLink 

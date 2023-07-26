@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { MDBNavbar, MDBNavbarBrand,MDBHamburgerToggler, MDBCollapse} from 'mdbreact';
+import git from '../Images/iconfinder_github_3.png';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -9,7 +10,8 @@ class Navbar extends React.Component {
       collapse: false,
       isWideEnough: false,
       collapse1: false,
-      collapseID: ''
+      collapseID: '',
+      urlGit: 'https://github.com/francososa97'
     };
     this.onClick = this.onClick.bind(this);
   }
@@ -36,7 +38,10 @@ class Navbar extends React.Component {
         <header>
             <MDBNavbar color="blue lighten-1" onClick={()=> this.toggleSingleCollapse('collapse1')} >
             <MDBNavbarBrand>
-            <strong className="white-text">Franco Sosa</strong>
+              <strong className="white-text">Franco Sosa</strong>
+              <a href={this.state.urlGit}>
+                <img src={git} alt="" className="icon-git-xs"/>
+              </a>
             </MDBNavbarBrand>
             <MDBHamburgerToggler color="white" id="hamburger1" onClick={()=> this.toggleSingleCollapse('collapse1')} />
               <MDBCollapse isOpen={this.state.collapse1} navbar>

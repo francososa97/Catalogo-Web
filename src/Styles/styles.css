@@ -42,6 +42,12 @@
     width:40px;
     height:40px;
 }
+.icon-git-xs{
+    width: 24px;
+    height: 22px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
 .card-pokedex{
     height: 326px;
     background-position: center;

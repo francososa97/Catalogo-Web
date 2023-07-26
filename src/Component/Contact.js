@@ -134,12 +134,8 @@ const Contact  = () => {
           <MDBCol md="3" className="text-center">
             <ul className="list-unstyled mb-0">
               <li>
-                <MDBIcon icon="map-marker-alt" size="2x" className="blue-text" />
-                <p>Castelar, Buenos Aires, Argentina</p>
-              </li>
-              <li>
                 <MDBIcon icon="phone" size="2x" className="blue-text mt-4" />
-                <p>011 44186438</p>
+                <p>+54 9 11 44186-438</p>
               </li>
               <li>
                 <MDBIcon icon="envelope" size="2x" className="blue-text mt-4" />
