@@ -1,7 +1,7 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Styles/styles.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './Component/Navbar';
+import NavBarItermediate from './Component/NavBarItermediate';
 import Footer from './Component/Footer';
 import Home from './Pages/Home';
 import Catalogue from './Pages/Catalogue';
@@ -10,11 +10,12 @@ import CatalogueContext from './context/CatalogueContext';
 
 
 function App() {
+
   return (
     <>
     <CatalogueContext>
         <Router>
-          <Navbar/>
+          <NavBarItermediate/>
           <Switch>
             <Route exact path="/" component={Home} />
               <Route exact path="/catalogo" component={Catalogue} />

@@ -1,8 +1,7 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import Progress from '../Component/Progress';
 import {MDBContainer,MDBCollapse, MDBIcon} from "mdbreact";
 import Contact from "../Component/Contact.js";
-
 class ContactPage extends React.Component {
   constructor(props) {
     super(props);

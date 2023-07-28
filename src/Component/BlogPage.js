@@ -18,13 +18,11 @@ import Triviador from "../Images/Triviador.PNG";
 
 const BlogPage = () => {
 
-  const projects  = useContext(CatalogueContext);
-
+  const {catalogue}  = useContext(CatalogueContext);
 
   const SetImg = (titleProject)=>{
 
     let imgProject;
-    
     switch(titleProject)
     {
       case "Reproductor de playlist":
@@ -67,17 +65,14 @@ const BlogPage = () => {
         imgProject=coin;
         break;
     };
-
     return imgProject;
-
   }
   
   return (
     <MDBCard className="mt-5 px-5 pb-5">
       <MDBCardBody>
           {
-            projects.map(project=>{
-              console.log(project)
+            catalogue.map(project=>{
               return(
                 <>
                 <MDBRow>

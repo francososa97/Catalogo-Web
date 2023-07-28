@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { MDBNavbar, MDBNavbarBrand,MDBHamburgerToggler, MDBCollapse} from 'mdbreact';
 import git from '../Images/iconfinder_github_3.png';
+import translateIcon from '../Images/Icons/transalteIcon.png';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -11,7 +12,8 @@ class Navbar extends React.Component {
       isWideEnough: false,
       collapse1: false,
       collapseID: '',
-      urlGit: 'https://github.com/francososa97'
+      urlGit: 'https://github.com/francososa97',
+      translate: this.props.translate
     };
     this.onClick = this.onClick.bind(this);
   }
@@ -33,15 +35,18 @@ class Navbar extends React.Component {
   }
 
   render() {
+    console.log(this.props)
+    debugger;
     return (
       <div>
         <header>
             <MDBNavbar color="blue lighten-1" onClick={()=> this.toggleSingleCollapse('collapse1')} >
             <MDBNavbarBrand>
-              <strong className="white-text">Franco Sosa</strong>
+              <strong className="white-text">{this.state.translate.name}</strong>
               <a href={this.state.urlGit}>
                 <img src={git} alt="" className="icon-git-xs"/>
               </a>
+              <img src={translateIcon} onClick={() => this.props.setLanguage("english")} alt="" className="icon-git-xs"/>
             </MDBNavbarBrand>
             <MDBHamburgerToggler color="white" id="hamburger1" onClick={()=> this.toggleSingleCollapse('collapse1')} />
               <MDBCollapse isOpen={this.state.collapse1} navbar>
@@ -52,7 +57,7 @@ class Navbar extends React.Component {
                         className="nav-link"
                         activeClassName="active"
                     >
-                      <p className="white-text">Home</p>
+                      <p className="white-text">{this.state.translate.titleHome}</p>
                     </NavLink>
                   </li>
                   <li>
@@ -61,7 +66,7 @@ class Navbar extends React.Component {
                         className="nav-link"
                         activeClassName="active"
                     >
-                      <p className="white-text">Catalogo</p>
+                      <p className="white-text">{this.state.translate.btnCatalogo}</p>
                     </NavLink>
                   </li>
                   <li>
@@ -70,7 +75,7 @@ class Navbar extends React.Component {
                          className="nav-link"
                         activeClassName="active"
                     >
-                      <p className="white-text">Contacto</p>
+                      <p className="white-text">{this.state.translate.footerTitleContacto}</p>
                     </NavLink>
                   </li>
                 </ul>

@@ -1,9 +1,11 @@
-import React,{useState} from 'react'
+import React,{useContext,useState} from 'react'
 import { MDBRow, MDBCol,MDBInput,MDBIcon, MDBBtn} from "mdbreact";
 import Notificacion from "./Notification";
 import { db } from "../FireBase/FirebaseConfig";
+import {CatalogueContext} from '../context/CatalogueContext';
 
 const Contact  = () => {
+  const {translate}  = useContext(CatalogueContext);
 
     const [nombre,SetNombre]=useState("");
     const [email,SetEmail]=useState("");
@@ -57,7 +59,7 @@ const Contact  = () => {
     return(
         <>
         <p className="text-center w-responsive mx-auto pb-5">
-          Deja aquí tu consulta o su feedback!
+          {translate.textTitlePageContct}
         </p>
         {notificacion.mostrar
             ?
@@ -76,7 +78,7 @@ const Contact  = () => {
                     <MDBInput 
                         type="text" 
                         id="contact-name" 
-                        label="Tu nombre (opcional)" 
+                        label= {translate.fieldContactName} 
                         value={nombre}
                         onChange={(e) => SetNombre(e.target.value)} 
                     />
@@ -87,7 +89,7 @@ const Contact  = () => {
                     <MDBInput
                       type="text"
                       id="contact-email"
-                      label="Tu mail"
+                      label={translate.fieldContactEmail}
                       value={email}
                       onChange={(e) => SetEmail(e.target.value)}
                     />
@@ -100,7 +102,7 @@ const Contact  = () => {
                     <MDBInput 
                         type="text" 
                         id="contact-subject" 
-                        label="Asunto (opcional)" 
+                        label={translate.fieldContactType}
                         value={asunto}
                         onChange={(e) => SetAsunto(e.target.value)}
                     />
@@ -113,7 +115,7 @@ const Contact  = () => {
                     <MDBInput
                       type="textarea"
                       id="contact-message"
-                      label="Tu mensaje"
+                      label={translate.fieldContactMesagge}
                       value={mensaje}
                       onChange={(e) => SetMensaje(e.target.value)}
                     />
@@ -127,7 +129,7 @@ const Contact  = () => {
                 size="md"
                 onClick={() => CraerConsulta()}
                 >
-                Enviar
+                {translate.btnSendContact}
               </MDBBtn>
             </div>
           </MDBCol>
@@ -144,7 +146,6 @@ const Contact  = () => {
             </ul>
           </MDBCol>
         </MDBRow>
-
         </>
     );
 }

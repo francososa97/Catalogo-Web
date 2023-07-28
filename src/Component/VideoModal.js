@@ -18,7 +18,7 @@ toggle = nr => () => {
 render() {
   return (
     <MDBContainer className="mt-1">
-      <MDBBtn color="info" onClick={this.toggle(1)}>Video de muestra</MDBBtn>
+      <MDBBtn color="info" onClick={this.toggle(1)}>{this.props.btnVideo}</MDBBtn>
       <MDBModal size="lg" isOpen={this.state.modal1} toggle={this.toggle(1)}>
         <MDBModalBody className="mb-0 p-0">
           <MDBIframe title="This is a unique title" src={Holograma} />
