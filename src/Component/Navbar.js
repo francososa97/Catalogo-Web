@@ -35,8 +35,6 @@ class Navbar extends React.Component {
   }
 
   render() {
-    console.log(this.props)
-    debugger;
     return (
       <div>
         <header>

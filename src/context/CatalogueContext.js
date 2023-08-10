@@ -25,7 +25,7 @@ const CatalogueProvider = (props) => {
           });
         }
         getCatalogue();
-    }, []);
+    }, [language,translate]);
 
     useEffect(() => {
         const changeLenguage = async () => {

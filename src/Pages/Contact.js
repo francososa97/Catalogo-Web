@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import Progress from '../Component/Progress';
 import {MDBContainer,MDBCollapse, MDBIcon} from "mdbreact";
 import Contact from "../Component/Contact.js";
