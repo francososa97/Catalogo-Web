@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import './Styles/styles.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBarItermediate from './Component/NavBarItermediate';
